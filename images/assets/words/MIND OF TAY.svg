@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="925" height="206" viewBox="0 0 925 206">
+  <defs>
+    <text id="text-1" font-size="0" style="white-space:pre" fill="inherit">
+      <tspan x="20" y="146" font-family="Roboto" font-size="150" font-weight="900" style="white-space:pre;text-transform:none">MIND OF TAY</tspan>
+    </text>
+    <filter id="filter-2" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="8" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="6.024"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.8 0"/>
+    </filter>
+    <mask id="mask-3" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="925" height="206" x="0" y="0" fill="white"/>
+      <use fill="black" xlink:href="#text-1"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="black" fill-opacity="0" stroke="black" stroke-width="10" filter="url(#filter-2)" xlink:href="#text-1"/>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="20" y="146" fill="rgb(255,255,255)" font-family="Roboto" font-size="150" font-weight="900" style="white-space:pre;text-transform:none">MIND OF TAY</tspan>
+    </text>
+    <use fill-opacity="0" stroke="rgb(255,255,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="10" mask="url(#mask-3)" xlink:href="#text-1"/>
+    <use fill-opacity="0" stroke="rgb(255,255,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="1" xlink:href="#text-1"/>
+  </g>
+</svg>

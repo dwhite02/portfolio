@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="277" height="192" viewBox="0 0 277 192">
+  <defs>
+    <path id="path-3" fill-rule="evenodd" d="M161.36132813 97L126 122V72l35.36132813 25z"/>
+  </defs>
+  <g>
+    <path fill="rgb(255,51,102)" fill-rule="evenodd" d="M50 0h177c27.59575122 0 50 22.40424878 50 50v92c0 27.59575122-22.40424878 50-50 50H50c-27.59575122 0-50-22.40424878-50-50V50C0 22.40424878 22.40424878 0 50 0z"/>
+    <g>
+      <ellipse cx="138" cy="97" fill="none" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" rx="48" ry="48"/>
+      <g>
+        <use fill="rgb(255,255,255)" xlink:href="#path-3"/>
+        <use fill-opacity="0" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" xlink:href="#path-3"/>
+      </g>
+    </g>
+  </g>
+</svg>

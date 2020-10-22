@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="499" height="194" viewBox="0 0 499 194">
+  <defs>
+    <text id="text-1" font-size="0" style="white-space:pre" fill="inherit">
+      <tspan x="10" y="144" font-family="Roboto" font-size="150" font-weight="900" style="white-space:pre;text-transform:none">ABOUT</tspan>
+    </text>
+    <filter id="filter-2" width="200%" height="200%" x="-50%" y="-50%" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="8" in="SourceAlpha" result="shadow-1-feOffset-shadow"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="0"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.8 0"/>
+    </filter>
+  </defs>
+  <g>
+    <use fill="black" fill-opacity="0" stroke="black" stroke-width="10" filter="url(#filter-2)" xlink:href="#text-1"/>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="10" y="144" fill="rgb(255,255,255)" font-family="Roboto" font-size="150" font-weight="900" style="white-space:pre;text-transform:none">ABOUT</tspan>
+    </text>
+    <use fill-opacity="0" stroke="rgb(255,255,255)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="10" xlink:href="#text-1"/>
+  </g>
+</svg>

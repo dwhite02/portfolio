@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mind of Tay</title>
+        <meta name="description" content="Portfolio website of Tay">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="donte, tay, portfolio, ux, ui, digital, design, chicago, front-end, web">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/tay.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/tay.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/tay.png">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css" rel="stylesheet">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="Mind of Tay">
+        <meta name="twitter:description" content="Portfolio website of Tay">
+        
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Mind of Tay" />
+        <meta property="og:type" content="design" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="images/tay-card.jpg" />
+        <meta property="og:tag" content="images/tay-card.jpg" />
+        <meta property="og:description" content="Portfolio website of Tay" />
+        <meta property="og:site_name" content="mind of tay" />
+    </head>
+    <body>
+        <div id="t-vue">
+            <header class="t-header-mobile md:hidden p-4 flex justify-between items-center">
+                <div class="t-logo">
+                    <a v-on:click="scroll('#home')" href="#home">
+                        <img class="w-8" src="images/assets/tay.jpg" alt="Logo Graphic"> 
+                    </a>
+                </div>
+                <nav class="t-nav-items flex">
+                    <div class="t-nav px-2">
+                        <a v-on:click="scroll('#about')" class="font-bold" href="#about">ABOUT</a>
+                    </div>
+                    <div class="t-nav px-2">
+                        <a v-on:click="scroll('#work')" class="font-bold" href="#work">WORK</a>
+                    </div>
+                    <div class="t-nav px-2">
+                        <a v-on:click="scroll('#contact')" class="font-bold" href="#contact">CONTACT</a>
+                    </div>
+                </nav>
+            </header>
+            <header class="t-header hidden md:block">
+                <a v-on:click="scroll('#home')" href="#home">
+                    <div class="t-nav">
+                        <p> HOME </p>
+                    </div>
+                </a>
+                <a v-on:click="scroll('#about')" href="#about">
+                    <div class="t-nav">
+                        <p> ABOUT </p>
+                    </div>
+                </a>
+                <a v-on:click="scroll('#work')" href="#work">
+                    <div class="t-nav">
+                        <p> WORK </p>
+                    </div>
+                </a>
+                <a v-on:click="scroll('#contact')" href="#contact">
+                    <div class="t-nav">
+                        <p> CONTACT </p>
+                    </div>
+                </a>
+            </header>
+            <section id="home" class="">
+                <div class="t-wrapper flex items-center justify-center">
+                    <div class="t-content">
+                        <div class="t-image">
+                            <img class="mx-auto" src="images/tay.png" alt="Tay Character graphic">
+                        </div>
+                        <h1 class="t-title text-center"> MIND OF TAY</h1>
+                    </div>
+                    <div class="t-bg">
+                        <div class="t-brain one">
+                            <img class="" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                        <div class="t-brain two">
+                            <img class="" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                        <div class="t-brain three">
+                            <img class="w-11/12" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                        <div class="t-brain four">
+                            <img class="" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="">
+                <div class="t-wrapper flex flex-col">
+                    <div class="t-content flex flex-1 lg:flex-row">
+                        <div class="t-image lg:w-6/12 flex-auto p-2">
+                            <img class="mx-auto" src="images/elipse.svg" alt="elipse">
+                        </div>
+                        <div class="t-info flex-auto lg:w-7/12 p-2">
+                            <h1 class="t-title"> ABOUT </h1>
+                            <div class="t-text-container w-11/12 text-center md:text-left mx-auto">
+                                <p class="t-text">
+                                    Hellooo, you are currently located in what I guess you can call my mind. I know you’re thinking, “oh wow, I’ve never
+                                    been in a mind before”. Crazy right 🤯, school and movies showed us wrong. But in any case, enough gibber gabber that’s
+                                    not what you came for right? You came to see what this guy does. Well since you asked so nicely I’ll let you know,
+                                    you’re welcome. I am a digital designer hoping to continue my exploration within the front-end space as I continue to
+                                    mesh the worlds of design and technology, while adding my own little touch. So now that I’ve told you, you are now stuck
+                                    here forever bwwahahaha…. Ha, I’m kidding, no need to worry. You are free to roam as you please, and if you wanna keep
+                                    looking and pretend this a screensaver, I’m all for it. But enough chit chat, gotta pack up for the Elon Musk trip to
+                                    Mercury…. Or was it Mars….🤔 Well in any case I’ll find out once I get there, chat with you soon maybe...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-side-content flex justify-evenly">
+                        <div class="t-sub-title">
+                            <h2> RESUME </h2>
+                        </div>
+                        <div class="t-job">
+                            <h3 class="t-org"> THE RISE FOUNDATION </h3>
+                            <p class="t-role "> Digital Media Specialist </p>
+                            <p class="t-date"> JUL20 ~ </p>
+                        </div>
+                        <div class="t-job">
+                            <h3 class="t-org"> NEON ONE </h3>
+                            <p class="t-role"> Junior Web Designer </p>
+                            <p class="t-date"> OCT18 - JUL20 </p>
+                        </div>
+                        <div class="t-job">
+                            <h3 class="t-org"> FREELANCE </h3>
+                            <p class="t-role"> Visual Designer </p>
+                            <p class="t-date"> 16 - 18 </p>
+                        </div>
+                    </div>
+                    <div class="t-bg">
+                        <div class="t-brain one">
+                            <img class="" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                        <div class="t-brain two">
+                            <img class="" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="">
+                <div class="t-wrapper flex flex-col">
+                    <div class="t-content">
+                        <div class="t-image">
+                            <img class="mx-auto" src="images/triangle.svg" alt="triangle">
+                        </div>
+                        <div class="t-info flex flex-col items-center">
+                            <h1 class="t-title flex-1"> WORK </h1>
+                            <div class="t-cards-container flex-1 w-full flex justify-center">
+                                <div v-for="project in projects" v-on:click="openModal(project.id)" class="t-card">
+                                    <img class="w-48" v-bind:src="project.img" v-bind:alt="project.alt">
+                                    <div class="t-card-info text-center">
+                                        <h2 class=" font-black">{{project.title.toUpperCase()}}</h2>
+                                        <p>
+                                            {{project.about.split(" ").splice(0,15).join(" ")}} ...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-bg">
+                                <div class="t-brain one">
+                                    <img class="" src="images/assets/brain.svg" alt="brain">
+                                </div>
+                                <div class="t-brain two">
+                                    <img class="" src="images/assets/brain.svg" alt="brain">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="">
+                <div class="t-wrapper flex items-center justify-center">
+                    <div class="t-content w-full">
+                        <div class="t-image t-brain">
+                            <img class="mx-auto w-1/2" src="images/assets/brain.svg" alt="brain">
+                        </div>
+                        <h1 class="t-title text-center"> CONTACT </h1>
+                        <div class="t-button-container flex justify-center">
+                            <a href="mailto:dpwhite22@gmail.com">
+                                <div class="t-button flex items-center py-2 px-8">
+                                    <p class="mr-5 font-bold">EMAIL</p>
+                                    <img class="w-10" src="images/assets/email.svg" alt="email icon">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div v-for="project in projects" v-bind:id="project.id" class="overlay flex items-center">
+                <!-- Overlay content -->
+                <div class="overlay-content flex flex-col w-10/12 md:w-1/2">
+                    <div class="t-icons flex justify-center">
+                        <a class="m-2" v-bind:href="project.web" target="_blank">
+                            <img src="images/assets/www.svg" alt="browser icon">
+                        </a>
+                        <a class="m-2" v-bind:href="project.git" target="_blank">
+                            <img src="images/assets/git.svg" alt="github icon">
+                        </a>
+                    </div>
+                    <div class="t-project-title mb-5">
+                        <h2 class="font-black"> {{project.title.toUpperCase()}}</h2>
+                    </div>
+                    <div class="t-for mb-5">
+                        <h3 class="font-bold">For :</h3>
+                        <p> {{project.for}}</p>
+                    </div>
+                    <div class="t-about mb-5">
+                        <h3 class="font-bold">About :</h3>
+                        <p>
+                            {{project.about}}
+                        </p>
+                    </div>
+                    <div class="t-tools mb-5">
+                        <h3 class="font-bold">Tools :</h3>
+                        <p> {{project.tools}} </p>
+                    </div>
+                </div>
+                <div v-on:click="closeModal(project.id)" class="t-close-btn">
+                    <img src="images/assets/close.svg" alt="close icon" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="55.068" height="54.948" viewBox="0 0 55.068 54.948">
+                        <defs>
+                            <linearGradient id="linearGradient-2" x1="-.551" x2="47.909" y1="-3.846" y2="49.453"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0" stop-color="rgb(255,255,255)" />
+                                <stop offset="1" stop-color="rgb(0,0,0)" />
+                            </linearGradient>
+                        </defs>
+                        <path fill="white" fill-rule="evenodd"
+                            d="M40.35253906 27.3229599l12.08081055 12.08086777c3.51245117 3.51236725 3.51245117 9.21555328 0 12.72792053-3.5123291 3.51236725-9.2154541 3.51236725-12.72790527 0L27.62463379 40.05087662l-12.26245117 12.2624054c-3.51245117 3.51236724-9.21557617 3.51236724-12.72790528 0-3.51245117-3.51236726-3.51245117-9.2155533 0-12.72792054L14.89672852 27.3229599 2.93591309 15.36219406c-3.5123291-3.51236343-3.5123291-9.21555328 0-12.72792053 3.5123291-3.51236343 9.21557617-3.51236343 12.72790527 0l11.96081543 11.96076965 11.7791748-11.77923584c3.5123291-3.51236343 9.21557618-3.51236343 12.72790528 0 3.5123291 3.51236725 3.5123291 9.2155571 0 12.72792053L40.35253907 27.3229599z" />
+                    </svg>
+                </div>
+                <div class="t-brain">
+                    <img class="" src="images/assets/brain.svg" alt="brain">
+                </div>
+            </div>
+        </div> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+</html>

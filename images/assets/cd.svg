@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="268" height="268" viewBox="0 0 268 268">
+  <defs>
+    <ellipse id="ellipse-1" cx="134" cy="134" rx="129" ry="129"/>
+    <mask id="mask-2" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="268" height="268" x="0" y="0" fill="white"/>
+      <use fill="black" xlink:href="#ellipse-1"/>
+    </mask>
+    <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="268" height="268" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#ellipse-1"/>
+    </mask>
+    <ellipse id="ellipse-6" cx="133.5" cy="134.5" rx="32.5" ry="32.5"/>
+    <mask id="mask-7" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="268" height="268" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#ellipse-6"/>
+    </mask>
+  </defs>
+  <g>
+    <g>
+      <use fill="rgb(255,51,102)" xlink:href="#ellipse-1"/>
+      <use fill-opacity="0" stroke="rgb(255,51,102)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="10" mask="url(#mask-2)" xlink:href="#ellipse-1"/>
+    </g>
+    <g mask="url(#mask-3)">
+      <rect width="311" height="47" x="-18.928" y="135.072" fill="rgb(255,255,255)" transform="rotate(-44.999887 136.57211383 158.57211383)"/>
+      <rect width="311" height="4.386" x="7.006" y="181.313" fill="rgb(255,255,255)" transform="rotate(-44.999887 162.50579918 183.50579918)"/>
+      <g>
+        <use fill="rgb(255,255,255)" xlink:href="#ellipse-6"/>
+        <use fill-opacity="0" stroke="rgb(255,51,102)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="10" mask="url(#mask-7)" xlink:href="#ellipse-6"/>
+      </g>
+    </g>
+  </g>
+</svg>
