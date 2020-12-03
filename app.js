@@ -22,7 +22,7 @@ new Vue ({
                 title: "Weathy",
                 for: "Personal Project",
                 about: "A mock web app depicting the weather to use as a design and functionality exercise.",
-                tools: "HTML/CSS,  Tailwind CSS, JavaScript, VueJS",
+                tools: "HTML/CSS, Tailwind CSS, JavaScript, VueJS, RESTful API",
                 web: "https://weathy-finder.netlify.app/",
                 github: "https://github.com/dwhite02/weathy",
                 img: "images/assets/weather.svg",
@@ -32,11 +32,22 @@ new Vue ({
                 id: "mod-3",
                 title: "AnimeTube",
                 for: "Personal Project",
-                about: "Inspired by love of anime, sparked an interest to create a mock streaming site to explore ux and ui concept.",
-                tools: "HTML/CSS,  Tailwind CSS, JavaScript, VueJS",
+                about: "Inspired by love of anime, sparked an interest to create a mock streaming site to explore ux and ui concepts.",
+                tools: "HTML/CSS,  Tailwind CSS, JavaScript, VueJS, Bootstrap, jQuery, RESTful API",
                 web: "https://animetube.netlify.app/",
                 github: "https://github.com/dwhite02/animetube",
                 img: "images/assets/video.svg",
+                alt: "Media Player icon"
+            },
+            {
+                id: "mod-4",
+                title: "Rock Paper Scissors",
+                for: "Personal Project",
+                about: "My take on creating a rock, paper, sciccors online game as a SPA exercise",
+                tools: "HTML/CSS, Tailwind CSS, JavaScript, VueJS, SASS",
+                web: "https://rps-online-game.netlify.app/",
+                github: "https://github.com/dwhite02/rock-paper-scissors",
+                img: "images/assets/scissors.svg",
                 alt: "Media Player icon"
             }
         ]

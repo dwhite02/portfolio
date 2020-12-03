@@ -70,6 +70,9 @@
                     </div>
                 </a>
             </header>
+
+            <!-- HOME -->
+
             <section id="home" class="">
                 <div class="t-wrapper flex items-center justify-center">
                     <div class="t-content">
@@ -94,6 +97,9 @@
                     </div>
                 </div>
             </section>
+
+            <!-- ABOUT -->
+
             <section id="about" class="">
                 <div class="t-wrapper flex flex-col">
                     <div class="t-content flex flex-1 lg:flex-row">
@@ -146,6 +152,9 @@
                     </div>
                 </div>
             </section>
+
+            <!-- WORK -->
+
             <section id="work" class="">
                 <div class="t-wrapper flex flex-col">
                     <div class="t-content">
@@ -154,14 +163,15 @@
                         </div>
                         <div class="t-info flex flex-col items-center">
                             <h1 class="t-title flex-1"> WORK </h1>
-                            <div class="t-cards-container flex-1 w-full flex justify-center">
-                                <div v-for="project in projects" v-on:click="openModal(project.id)" class="t-card">
-                                    <img class="w-48" v-bind:src="project.img" v-bind:alt="project.alt">
+                            <div class="t-cards-container flex-1 w-full flex justify-center flex-wrap">
+                                <div v-for="project in projects" v-on:click="openModal(project.id)" class="t-card flex-auto ">
+                                    <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
                                     <div class="t-card-info text-center">
                                         <h2 class=" font-black">{{project.title.toUpperCase()}}</h2>
                                         <p>
                                             {{project.about.split(" ").splice(0,15).join(" ")}} ...
                                         </p>
+                                        <button> View More </button>
                                     </div>
                                 </div>
                             </div>
@@ -177,6 +187,9 @@
                     </div>
                 </div>
             </section>
+
+            CONTACT
+
             <section id="contact" class="">
                 <div class="t-wrapper flex items-center justify-center">
                     <div class="t-content w-full">
@@ -195,15 +208,20 @@
                     </div>
                 </div>
             </section>
+
+            <!-- MODAL WORK PROJECTS -->
+
             <div v-for="project in projects" v-bind:id="project.id" class="overlay flex items-center">
                 <!-- Overlay content -->
                 <div class="overlay-content flex flex-col w-10/12 md:w-1/2">
                     <div class="t-icons flex justify-center">
-                        <a class="m-2" v-bind:href="project.web" target="_blank">
-                            <img src="images/assets/www.svg" alt="browser icon">
+                        <a class="m-4 " v-bind:href="project.web" target="_blank">
+                            <p class="t-icon-txt mb-4"> WEB </p>
+                            <img class="h-12" src="images/assets/www.svg" alt="browser icon">
                         </a>
-                        <a class="m-2" v-bind:href="project.github" target="_blank">
-                            <img src="images/assets/git.svg" alt="github icon">
+                        <a class="m-4" v-bind:href="project.github" target="_blank">
+                            <p class="t-icon-txt mb-4"> GIT </p>
+                            <img class="h-12" src="images/assets/git.svg" alt="github icon">
                         </a>
                     </div>
                     <div class="t-project-title mb-5">
