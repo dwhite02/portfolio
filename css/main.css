@@ -1,749 +1,707 @@
 /*  -----------------
     BASE STYLES
 ---------------------  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap");
 html,
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 1em;
-    position: relative;
-    scroll-behavior: smooth;
-    background: black;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative;
+  scroll-behavior: smooth;
+  background: black;
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 900 !important;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 900 !important;
 }
 
 h1 {
-   font-family: 'Passion One', 'Roboto', Helvetica, Arial, sans-serif;
-   font-weight: 700 !important;
+  font-family: "Passion One", "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
 }
 
 section {
-    min-height: 50vh;
-    height: 100%;
+  min-height: 50vh;
+  height: 100%;
 }
 
 @media (min-width: 769px) {
-    section {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    body,html {
-        overflow: hidden;
-    }
+  section {
+    height: 100vh;
+    width: 100vw;
+  }
+  body,
+  html {
+    overflow: hidden;
+  }
 }
-
-
-
-
 /*  -----------------
     ID STYLES
 ---------------------  */
-
 @media (min-width: 1024px) {
-    #about {
-        position: absolute;
-        top:0;
-        left: 100%;
-    }
-
-    #work {
-        position: absolute;
-        top:0;
-        left: 200%;
-    }
-
-    #contact {
-        position: absolute;
-        top:0;
-        left: 300%;
-    }
-
-
+  #about {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  #work {
+    position: absolute;
+    top: 0;
+    left: 200%;
+  }
+  #contact {
+    position: absolute;
+    top: 0;
+    left: 300%;
+  }
 }
-
 /* HOME */
 #home {
-    height: 100vh;
+  height: 100vh;
 }
 
 #home .t-content {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
-#home .t-title  {
-   position: absolute;
-   bottom: -32%;
-   right: 0;
-   left: 0;
-   z-index: 10;
-   text-shadow: -5px 8px 10px rgba(0, 0, 0, .8);
+#home .t-title {
+  position: absolute;
+  bottom: -32%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  text-shadow: -5px 8px 10px rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width:1024px) {
-    #home .t-title  {
-        font-size: 15vw;
-        bottom: -20%;
-    }
+@media (max-width: 1024px) {
+  #home .t-title {
+    font-size: 15vw;
+    bottom: -20%;
+  }
 }
-
 #home .t-brain {
-    position: absolute;
+  position: absolute;
 }
 
 #home .t-brain.one {
-    left: 3%;
-    top: 8%;
-    width: 25%;
+  left: 3%;
+  top: 8%;
+  width: 25%;
 }
-    
+
 #home .t-brain.two {
-    right: 11%;
-    bottom: 2%;
-    width: 12%;
-    opacity: .8;
+  right: 11%;
+  bottom: 2%;
+  width: 12%;
+  opacity: 0.8;
 }
 
-@media (max-width:768px) {
-    #home .t-brain.two {
-        display: none;
-    }
+@media (max-width: 768px) {
+  #home .t-brain.two {
+    display: none;
+  }
 }
-
 #home .t-brain.three {
-    right: -10%;
-    top: -22%;
-    width: 40%;
-    transform: rotate(195deg) !important;
-    opacity: .5;
+  right: -10%;
+  top: -22%;
+  width: 40%;
+  transform: rotate(195deg) !important;
+  opacity: 0.5;
 }
 
-@media (min-width:376px) and (max-width:1024px) {
-    #home .t-brain.three {
-        top: -6%;
-    }
+@media (min-width: 376px) and (max-width: 1024px) {
+  #home .t-brain.three {
+    top: -6%;
+  }
 }
-
-
 #home .t-brain.four {
-    left: 8%;
-    bottom: 8%;
-    width: 5%;
-    transform: rotate(247deg) !important;
-    opacity: .15;
+  left: 8%;
+  bottom: 8%;
+  width: 5%;
+  transform: rotate(247deg) !important;
+  opacity: 0.15;
 }
 
 /* ABOUT */
-
 #about .t-brain {
-    position: absolute;
+  position: absolute;
 }
 
 #about .t-brain.one {
-    left: 3%;
-    bottom: 11%;
-    width: 25%;
+  left: 3%;
+  bottom: 11%;
+  width: 25%;
 }
-    
+
 #about .t-brain.two {
-    right: 5%;
-    top: 6%;
-    width: 12%;
+  right: 5%;
+  top: 6%;
+  width: 12%;
 }
 
 #about .t-image {
-    margin-left: 4%;
+  margin-left: 4%;
 }
 
 #about .t-info {
-    position: relative;
-    margin-top: 5%;
-    color: white;
+  position: relative;
+  margin-top: 5%;
+  color: white;
 }
 
 #about .t-job h3 {
-    color: #3399FF;
+  color: #3399FF;
 }
 
 #about .t-side-content {
-    color: white;
-    margin-bottom: 1%;
+  color: white;
+  margin-bottom: 1%;
 }
 
 #about .t-sub-title {
-    border-top: 10px solid #fff;
+  border-top: 10px solid #fff;
 }
 
-#about .t-sub-title h2{
-    text-shadow: -2px 5px #FF3366;
-    font-size: 3vw;
+#about .t-sub-title h2 {
+  text-shadow: -2px 5px #FF3366;
+  font-size: 3vw;
 }
 
-#about .t-text-container{
-    position: relative;
-    background-color: transparent;
-    padding: 20px;
-    border: 10px solid #3399FF;
-    border-radius: 50px;
-    height: auto;
+#about .t-text-container {
+  position: relative;
+  background-color: transparent;
+  padding: 20px;
+  border: 10px solid #3399FF;
+  border-radius: 50px;
+  height: auto;
 }
 
 #about .t-text-container::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 40%;
-    right: 0;
-    bottom: 0;
-    left: 10%;
-    z-index: -1;
-    border: 10px solid rgba(255,255,255, .11);
-    border-radius: 50px;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  border: 10px solid rgba(255, 255, 255, 0.11);
+  border-radius: 50px;
 }
 
 #about .t-title {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 @media (min-width: 1024px) {
-    #about .t-text {
-        font-size: 15px ;
-    }
-
-    #about .t-text-container{
-        margin-top: -6%;
-    }
-
-    #about .t-text-container::after {
-        top: 20%;
-    }
+  #about .t-text {
+    font-size: 15px;
+  }
+  #about .t-text-container {
+    margin-top: -6%;
+  }
+  #about .t-text-container::after {
+    top: 20%;
+  }
 }
-
 @media (max-width: 1024px) {
-
-    #about .t-brain.one {
-        left: 3%;
-        bottom: 11%;
-        width: 20%;
-    }
-
-    #about .t-content {
-        flex-direction: column;
-    }
-
-    #about .t-title {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    #about .t-title,
-    #about .t-image {
-        margin-left: 0;
-    }
-
-    #about .t-image {
-        width: 100%;
-    }
-
-    #about .t-info {
-        margin-top: -35%;
-        width: 100%;
-    }
-
-    #about .t-side-content {
-        margin-top: 10%;
-    }
-
-    #about .t-text-container{
-        margin-top: 3%;
-    } 
+  #about .t-brain.one {
+    left: 3%;
+    bottom: 11%;
+    width: 20%;
+  }
+  #about .t-content {
+    flex-direction: column;
+  }
+  #about .t-title {
+    text-align: center;
+    margin-top: 5%;
+  }
+  #about .t-title,
+  #about .t-image {
+    margin-left: 0;
+  }
+  #about .t-image {
+    width: 100%;
+  }
+  #about .t-info {
+    margin-top: -35%;
+    width: 100%;
+  }
+  #about .t-side-content {
+    margin-top: 10%;
+  }
+  #about .t-text-container {
+    margin-top: 3%;
+  }
 }
-
 @media (max-width: 768px) {
-    #about .t-brain.two {
-        top: 0;
-    }
+  #about .t-brain.two {
+    top: 0;
+  }
 }
-
 @media (max-width: 375px) {
-    #about .t-job {
-        margin-bottom: 10%;
-    }
-
-    #about .t-side-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #about .t-sub-title{
-        border-top: none;
-        margin-bottom: 5%;
-        margin-top: 5%;
-    }
-
-    #about .t-sub-title h2{
-        font-size: 7vw;
-    }
-
-    #about .t-text-container::after {
-        top: 15%;
-        left: 10%;
-    }
+  #about .t-job {
+    margin-bottom: 10%;
+  }
+  #about .t-side-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about .t-sub-title {
+    border-top: none;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  #about .t-sub-title h2 {
+    font-size: 7vw;
+  }
+  #about .t-text-container::after {
+    top: 15%;
+    left: 10%;
+  }
 }
-
 /* WORK */
-
 #work .t-brain {
-    position: absolute;
+  position: absolute;
 }
 
 #work .t-brain.one {
-    left: 10%;
-    top: 1%;
-    width: 5%;
+  left: 10%;
+  top: 1%;
+  width: 5%;
 }
-    
+
 #work .t-brain.two {
-    right: 5%;
-    top: 9%;
-    width: 20%;
+  right: 5%;
+  top: 9%;
+  width: 20%;
 }
 
 #work .t-card {
-    position: relative;
-    width: 20%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    box-shadow: 20px 30px #FF3366;
-    padding: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border: 10px solid white;;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    transition: all .4s;
-    overflow: hidden;
-    margin-bottom: 8%;
-    min-height: 350px;
-
+  position: relative;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 20px 30px #FF3366;
+  padding: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 10px solid white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  transition: all 0.4s;
+  overflow: hidden;
+  margin-bottom: 8%;
+  min-height: 350px;
 }
 
 #work .t-card:hover {
-    cursor: pointer;
-    border: 10px solid #FF3366;
-    transform: translateY(-50px);
+  cursor: pointer;
+  border: 10px solid #FF3366;
+  transform: translateY(-50px);
 }
 
-
-#work .t-card:hover > .t-card-info{
-    top: 0;
+#work .t-card:hover > .t-card-info {
+  top: 0;
 }
 
 #work .t-card-info {
-    position: absolute;
-    content: "";
-    top: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    height: 100%;
-    width: 100%;
-    background: black;
-    color: white;
-    transition: all .4s;;
+  position: absolute;
+  content: "";
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background: black;
+  color: white;
+  transition: all 0.4s;
 }
 
 #work .t-cards-container {
-    max-width: 1250px;
+  max-width: 1250px;
 }
 
-#work .t-card-info button{
-    background-color: #3399FF;
-    border-radius: 100px;
-    padding: 10px 25px;
-    margin-top: 15%;
-    transition: all .3s;
+#work .t-card-info button {
+  background-color: #3399FF;
+  border-radius: 100px;
+  padding: 10px 25px;
+  margin-top: 15%;
+  transition: all 0.3s;
 }
 
-#work .t-card-info button:hover{
-    background-color: #FF3366;
+#work .t-card-info button:hover {
+  background-color: #FF3366;
 }
 
-#work .t-card-info h2{
-    font-size: 2.3vw;
-    margin-bottom: 5%;
+#work .t-card-info h2 {
+  font-size: 2.3vw;
+  margin-bottom: 5%;
 }
 
 #work .t-image {
-    margin-top: -8%;
-    margin-left: 24%;
+  margin-top: -8%;
+  margin-left: 24%;
 }
 
 #work .t-info {
-    margin-top: -32%;
+  margin-top: -32%;
 }
 
 @media (min-width: 1280px) {
-    #work .t-cards-container {
-        position: absolute;
-        bottom: -6%;
-    }
+  #work .t-cards-container {
+    position: absolute;
+    bottom: -6%;
+  }
 }
-
 @media (max-width: 1024px) {
-
-    #work .t-card {
-        width: 100%;
-        margin-left: 3%;
-        margin-right: 3%;
-        max-width: 30%;
-    }
-
+  #work .t-card {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-width: 30%;
+  }
 }
-
 @media (max-width: 768px) {
-
-    #work .t-brain.one {
-        display: none;
-    }
-
-    #work .t-brain.two {
-        width: 10%;
-    }
-
-    #work .t-card {
-        width: 70%;
-        height: 50%;
-        max-width: 100%;
-    }
-
-
-    #work .t-cards-container {
-        margin-top: 8%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #work .t-card:hover {
-        cursor: pointer;
-        border: 10px solid #FF3366;
-        transform: translateY(-30px);
-    }
-
-    #work .t-card-info h2{
-        font-size: 4vw;
-    }
-
-    #work .t-image {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 375px) {
-
-    #work .t-card {
-        width: 90%;
-        margin-bottom: 25%;
-        box-shadow: 20px 30px #FF3366;
-    }
-
-    #work .t-card-info h2{
-        font-size: 6vw;
-    }
-}
-
-/* CONTACT  */
-
-@media (min-width:376px) and (max-width:768px) {
-    #contact {
-        height: 100vh;
-    }
-}
-
-#contact .t-button {
-    color: white;
-    position: relative;
-    border-bottom: 10px solid #3399FF;
+  #work .t-brain.one {
+    display: none;
+  }
+  #work .t-brain.two {
+    width: 10%;
+  }
+  #work .t-card {
+    width: 70%;
+    height: 50%;
+    max-width: 100%;
+  }
+  #work .t-cards-container {
+    margin-top: 8%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #work .t-card:hover {
     cursor: pointer;
+    border: 10px solid #FF3366;
+    transform: translateY(-30px);
+  }
+  #work .t-card-info h2 {
+    font-size: 4vw;
+  }
+  #work .t-image {
+    margin-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  #work .t-card {
+    width: 90%;
+    margin-bottom: 25%;
+    box-shadow: 20px 30px #FF3366;
+  }
+  #work .t-card-info h2 {
+    font-size: 6vw;
+  }
+}
+/* CONTACT  */
+@media (min-width: 376px) and (max-width: 768px) {
+  #contact {
+    height: 100vh;
+  }
+}
+#contact .t-button {
+  color: white;
+  position: relative;
+  border-bottom: 10px solid #3399FF;
+  cursor: pointer;
 }
 
 #contact .t-button::after {
-    position: absolute;
-    border-bottom: 10px solid #fff;
-    content: "";
-    top: 63px;
-    left: 10px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-
+  position: absolute;
+  border-bottom: 10px solid #fff;
+  content: "";
+  top: 63px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 #contact .t-button:hover > img {
-    animation: jump .6s ease-in-out;
+  animation: jump 0.6s ease-in-out;
 }
 
 #contact .t-button:hover {
-    animation: impact .6s ease-in-out;
+  animation: impact 0.6s ease-in-out;
 }
 
-#contact .t-button:hover::after  {
-    animation: impact2 .6s ease-in-out;
+#contact .t-button:hover::after {
+  animation: impact2 0.6s ease-in-out;
 }
- 
+
 #contact .t-title {
-    margin-top: -18%;
-    position: relative;
-    z-index: 10;
+  margin-top: -18%;
+  position: relative;
+  z-index: 10;
 }
 
 /*  -----------------
    CLASS STYLES
 ---------------------  */
-
 .overlay {
-    color: white;
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 0;
-    width: 100%;
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0%;
-    background-color: black;
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-    overflow: hidden;
+  color: white;
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  left: 0;
+  top: 0%;
+  background-color: black;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  overflow: hidden;
 }
 
 .overlay .t-close-btn {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    cursor: pointer;
-    color: white;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  color: white;
 }
 
 .overlay .t-close-btn svg {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: all .5s;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .overlay .t-close-btn:hover > svg {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .overlay-content {
-    
-    margin: auto;
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
+  margin: auto;
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
 }
 
 .overlay-content h3 {
-    font-size: 3vw;
+  font-size: 3vw;
 }
 
 .overlay .t-brain {
-    position: absolute;
-    left:-5%;
-    bottom: -15%;
-    width: 100%;
+  position: absolute;
+  left: -5%;
+  bottom: -15%;
+  width: 100%;
 }
 
 .t-header-mobile {
-    position: fixed;
-    width: 100%;
-    background-color: #FF3366;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
-    color: white;
-    z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: #FF3366;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 100;
 }
 
 .t-icon-txt {
-    background-color: #3399FF;
+  background-color: #3399FF;
 }
 
 .t-icons a:hover > img {
-    transform: scale(1.25);
+  transform: scale(1.25);
 }
 
-.t-title{
-    font-size: 13vw;
-    color: white;
-    text-shadow: -5px 8px rgba(0, 0, 0, .8);
+.t-title {
+  font-size: 13vw;
+  color: white;
+  text-shadow: -5px 8px rgba(0, 0, 0, 0.8);
 }
 
 .t-project-title {
-    color: #3399FF;
-    font-size: 6vw;
-    line-height: 1;
+  color: #3399FF;
+  font-size: 6vw;
+  line-height: 1;
 }
 
 .t-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-    padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  padding: 20px;
 }
 
 /* Media Queries */
-
 @media (max-width: 1024px) {
-    .t-title{
-        font-size: 18vw;
-    }
-
-    .overlay .t-brain {
-        left: -4%;
-        bottom:-5%;
-        width: 60%;
-    }
+  .t-title {
+    font-size: 18vw;
+  }
+  .overlay .t-brain {
+    left: -4%;
+    bottom: -5%;
+    width: 60%;
+  }
 }
-
 @media (max-width: 768px) {
-    .overlay .t-brain {
-        left: -5%;
-        bottom:-15%;
-        width: 60%;
-    }
+  .overlay .t-brain {
+    left: -5%;
+    bottom: -15%;
+    width: 60%;
+  }
 }
-
 @media (min-width: 768px) {
-    .t-brain img {
-        animation: float 1.25s ease-in-out infinite alternate;
-    }
-
-    .t-header {
+  .t-brain img {
+    animation: float 1.25s ease-in-out infinite alternate;
+  }
+  .t-header {
     position: fixed;
     right: 3%;
-    top: 40%; 
+    top: 40%;
     z-index: 20;
-    }
-
-    .t-nav {
-        width: 10px;
-        height: 40px;
-        background-color: white;
-        margin-bottom: 15px;
-        padding:10px 5px;
-        box-shadow: -5px 8px 10px rgba(0, 0, 0, .5);
-        cursor: pointer;
-        position: relative;
-        z-index: 10;
-        right:0  !important;
-        margin-left: auto;
-        transition: all .4s;
-    }
-
-    .t-nav:hover {
-        width: 100px ;
-        background-color:  #3399FF;
-    }
-
-    .t-nav.current{
-        background-color: #3399FF;
-    }
-
-    .t-nav:hover > p{
-        display: block;
-        animation: appear .5s forwards linear;
-    }
-
-
-    .t-nav p {
-        color: white;
-        position: absolute;
-        font-weight: 900;
-        top: 50%;
-        left:10%;
-        transform: translateY(-50%);
-        display: none;
-        opacity: 0;
-    }
+  }
+  .t-nav {
+    width: 10px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    right: 0 !important;
+    margin-left: auto;
+    transition: all 0.4s;
+  }
+  .t-nav:hover {
+    width: 100px;
+    background-color: #3399FF;
+  }
+  .t-nav.current {
+    background-color: #3399FF;
+  }
+  .t-nav:hover > p {
+    display: block;
+    animation: appear 0.5s forwards linear;
+  }
+  .t-nav p {
+    color: white;
+    position: absolute;
+    font-weight: 900;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    display: none;
+    opacity: 0;
+  }
 }
-
 @media (max-width: 375px) {
-
-    .overlay-content h3 {
-        font-size: 6vw;
-    }
-
-    .overlay .t-brain {
-        left: -20%;
-        bottom:-12%;
-        width: 50%;
-    }
-
-    .overlay .t-close-btn {
-        top: 12%;
-        right: 2%;
-    }
-
-    .overlay .t-close-btn svg,
-    .overlay .t-close-btn img {
-        width: 60%;
-    }
-
-    .t-project-title {
-        color: #3399FF;
-        font-size: 10vw;
-    }
-    
+  .overlay-content h3 {
+    font-size: 6vw;
+  }
+  .overlay .t-brain {
+    left: -20%;
+    bottom: -12%;
+    width: 50%;
+  }
+  .overlay .t-close-btn {
+    top: 12%;
+    right: 2%;
+  }
+  .overlay .t-close-btn svg,
+  .overlay .t-close-btn img {
+    width: 60%;
+  }
+  .t-project-title {
+    color: #3399FF;
+    font-size: 10vw;
+  }
 }
-
 /*  -----------------
    Animations
 ---------------------  */
-
 @keyframes appear {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 @keyframes float {
-  from {transform: translateY(0);}
-  to {transform:  translateY(30px) ;}
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
 }
-
 @keyframes jump {
-    0% {transform: translateY(0);}
-    60% { transform: translateY(-30px) rotate(1800deg);}
-    90% {transform: translateY(0px) rotate(3600deg);}
-    95% {transform: translateY(-5px) rotate(3600deg);}
-    100% {transform: translateY(0px) rotate(3600deg);}
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-30px) rotate(1800deg);
+  }
+  90% {
+    transform: translateY(0px) rotate(3600deg);
+  }
+  95% {
+    transform: translateY(-5px) rotate(3600deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(3600deg);
+  }
 }
-
 @keyframes impact {
-    0% {padding-bottom: 8px;}
-    90% {padding-bottom: 8px;}
-    95% {padding-bottom: 15px;}
-    100% {padding-bottom: 8px;}
+  0% {
+    padding-bottom: 8px;
+  }
+  90% {
+    padding-bottom: 8px;
+  }
+  95% {
+    padding-bottom: 15px;
+  }
+  100% {
+    padding-bottom: 8px;
+  }
 }
-
 @keyframes impact2 {
-    0% {top: 63px;}
-    90% {top: 63px;}
-    95% {top: 70px;}
-    100% {top: 63px;}
-}
-
+  0% {
+    top: 63px;
+  }
+  90% {
+    top: 63px;
+  }
+  95% {
+    top: 70px;
+  }
+  100% {
+    top: 63px;
+  }
+}/*# sourceMappingURL=main.css.map */
