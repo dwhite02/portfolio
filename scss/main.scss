@@ -1,52 +1,5 @@
-/*  -----------------
-    BASE STYLES
----------------------  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap');
-
-
-html,
-body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    font-size: 1em;
-    position: relative;
-    scroll-behavior: smooth;
-    background: black;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 900 !important;
-}
-
-h1 {
-    font-family: 'Passion One', 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: 700 !important;
-}
-
-section {
-    min-height: 50vh;
-    height: 100%;
-}
-
-@media (min-width: 769px) {
-    section {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    body,
-    html {
-        overflow: hidden;
-    }
-}
-
-
+@use 'abstracts/index' as *;
+@use 'base/index' as *;
 
 
 /*  -----------------
@@ -176,7 +129,7 @@ section {
 }
 
 #about .t-job h3 {
-    color: #3399FF;
+    color: $primary;
 }
 
 #about .t-side-content {
@@ -189,7 +142,7 @@ section {
 }
 
 #about .t-sub-title h2 {
-    text-shadow: -2px 5px #FF3366;
+    text-shadow: -2px 5px $secondary;
     font-size: 3vw;
 }
 
@@ -197,7 +150,7 @@ section {
     position: relative;
     background-color: transparent;
     padding: 20px;
-    border: 10px solid #3399FF;
+    border: 10px solid $primary;
     border-radius: 50px;
     height: auto;
 }
@@ -332,7 +285,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    box-shadow: 20px 30px #FF3366;
+    box-shadow: 20px 30px $secondary;
     padding: 20px;
     margin-left: 2%;
     margin-right: 2%;
@@ -349,7 +302,7 @@ section {
 
 #work .t-card:hover {
     cursor: pointer;
-    border: 10px solid #FF3366;
+    border: 10px solid $secondary;
     transform: translateY(-50px);
 }
 
@@ -379,7 +332,7 @@ section {
 }
 
 #work .t-card-info button {
-    background-color: #3399FF;
+    background-color: $primary;
     border-radius: 100px;
     padding: 10px 25px;
     margin-top: 15%;
@@ -387,7 +340,7 @@ section {
 }
 
 #work .t-card-info button:hover {
-    background-color: #FF3366;
+    background-color: $secondary;
 }
 
 #work .t-card-info h2 {
@@ -447,7 +400,7 @@ section {
 
     #work .t-card:hover {
         cursor: pointer;
-        border: 10px solid #FF3366;
+        border: 10px solid $secondary;
         transform: translateY(-30px);
     }
 
@@ -465,7 +418,7 @@ section {
     #work .t-card {
         width: 90%;
         margin-bottom: 25%;
-        box-shadow: 20px 30px #FF3366;
+        box-shadow: 20px 30px $secondary;
     }
 
     #work .t-card-info h2 {
@@ -484,7 +437,7 @@ section {
 #contact .t-button {
     color: white;
     position: relative;
-    border-bottom: 10px solid #3399FF;
+    border-bottom: 10px solid $primary;
     cursor: pointer;
 }
 
@@ -583,14 +536,14 @@ section {
 .t-header-mobile {
     position: fixed;
     width: 100%;
-    background-color: #FF3366;
+    background-color: $secondary;
     box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
     color: white;
     z-index: 100;
 }
 
 .t-icon-txt {
-    background-color: #3399FF;
+    background-color: $primary;
 }
 
 .t-icons a:hover>img {
@@ -604,7 +557,7 @@ section {
 }
 
 .t-project-title {
-    color: #3399FF;
+    color: $primary;
     font-size: 6vw;
     line-height: 1;
 }
@@ -669,11 +622,11 @@ section {
 
     .t-nav:hover {
         width: 100px;
-        background-color: #3399FF;
+        background-color: $primary;
     }
 
     .t-nav.current {
-        background-color: #3399FF;
+        background-color: $primary;
     }
 
     .t-nav:hover>p {
@@ -717,90 +670,8 @@ section {
     }
 
     .t-project-title {
-        color: #3399FF;
+        color: $primary;
         font-size: 10vw;
     }
 
-}
-
-/*  -----------------
-   Animations
----------------------  */
-
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes float {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(30px);
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    60% {
-        transform: translateY(-30px) rotate(1800deg);
-    }
-
-    90% {
-        transform: translateY(0px) rotate(3600deg);
-    }
-
-    95% {
-        transform: translateY(-5px) rotate(3600deg);
-    }
-
-    100% {
-        transform: translateY(0px) rotate(3600deg);
-    }
-}
-
-@keyframes impact {
-    0% {
-        padding-bottom: 8px;
-    }
-
-    90% {
-        padding-bottom: 8px;
-    }
-
-    95% {
-        padding-bottom: 15px;
-    }
-
-    100% {
-        padding-bottom: 8px;
-    }
-}
-
-@keyframes impact2 {
-    0% {
-        top: 63px;
-    }
-
-    90% {
-        top: 63px;
-    }
-
-    95% {
-        top: 70px;
-    }
-
-    100% {
-        top: 63px;
-    }
 }

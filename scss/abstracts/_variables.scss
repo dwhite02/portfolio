@@ -1,0 +1,20 @@
+/*  -----------------
+    Breakpoints
+---------------------  */
+
+// Define your breakpoints as variables (optional)
+$breakpoints: (
+    xs: 375px, // Mobile
+    sm: 576px, // Small tablets
+    md: 768px, // Tablets
+    lg: 992px, // Small laptops
+    xl: 1200px // Desktops
+);
+
+/*  -----------------
+    Colors
+---------------------  */
+
+$primary:#3399FF;
+$secondary:#FF3366;
+// $tertiary:;

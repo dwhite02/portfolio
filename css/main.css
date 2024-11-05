@@ -1,8 +1,148 @@
 /*  -----------------
-    BASE STYLES
+    Breakpoints
+---------------------  */
+/*  -----------------
+    Colors
+---------------------  */
+/*  -----------------
+   Animations
 ---------------------  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap");
+/*  -----------------
+    Breakpoints
+---------------------  */
+/*  -----------------
+    Colors
+---------------------  */
+/*  -----------------
+   Animations
+---------------------  */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-30px) rotate(1800deg);
+  }
+  90% {
+    transform: translateY(0px) rotate(3600deg);
+  }
+  95% {
+    transform: translateY(-5px) rotate(3600deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(3600deg);
+  }
+}
+@keyframes impact {
+  0% {
+    padding-bottom: 8px;
+  }
+  90% {
+    padding-bottom: 8px;
+  }
+  95% {
+    padding-bottom: 15px;
+  }
+  100% {
+    padding-bottom: 8px;
+  }
+}
+@keyframes impact2 {
+  0% {
+    top: 63px;
+  }
+  90% {
+    top: 63px;
+  }
+  95% {
+    top: 70px;
+  }
+  100% {
+    top: 63px;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-30px) rotate(1800deg);
+  }
+  90% {
+    transform: translateY(0px) rotate(3600deg);
+  }
+  95% {
+    transform: translateY(-5px) rotate(3600deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(3600deg);
+  }
+}
+@keyframes impact {
+  0% {
+    padding-bottom: 8px;
+  }
+  90% {
+    padding-bottom: 8px;
+  }
+  95% {
+    padding-bottom: 15px;
+  }
+  100% {
+    padding-bottom: 8px;
+  }
+}
+@keyframes impact2 {
+  0% {
+    top: 63px;
+  }
+  90% {
+    top: 63px;
+  }
+  95% {
+    top: 70px;
+  }
+  100% {
+    top: 63px;
+  }
+}
+/*  -----------------
+    BASE STYLES
+---------------------  */
 html,
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -11,6 +151,12 @@ body {
   position: relative;
   scroll-behavior: smooth;
   background: black;
+}
+@media (min-width: 768px) {
+  html,
+  body {
+    overflow: hidden;
+  }
 }
 
 h2,
@@ -31,17 +177,13 @@ section {
   min-height: 50vh;
   height: 100%;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   section {
     height: 100vh;
     width: 100vw;
   }
-  body,
-  html {
-    overflow: hidden;
-  }
 }
+
 /*  -----------------
     ID STYLES
 ---------------------  */
@@ -639,69 +781,5 @@ section {
   .t-project-title {
     color: #3399FF;
     font-size: 10vw;
-  }
-}
-/*  -----------------
-   Animations
----------------------  */
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes float {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(30px);
-  }
-}
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  60% {
-    transform: translateY(-30px) rotate(1800deg);
-  }
-  90% {
-    transform: translateY(0px) rotate(3600deg);
-  }
-  95% {
-    transform: translateY(-5px) rotate(3600deg);
-  }
-  100% {
-    transform: translateY(0px) rotate(3600deg);
-  }
-}
-@keyframes impact {
-  0% {
-    padding-bottom: 8px;
-  }
-  90% {
-    padding-bottom: 8px;
-  }
-  95% {
-    padding-bottom: 15px;
-  }
-  100% {
-    padding-bottom: 8px;
-  }
-}
-@keyframes impact2 {
-  0% {
-    top: 63px;
-  }
-  90% {
-    top: 63px;
-  }
-  95% {
-    top: 70px;
-  }
-  100% {
-    top: 63px;
   }
 }/*# sourceMappingURL=main.css.map */
