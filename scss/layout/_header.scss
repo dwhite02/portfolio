@@ -1,0 +1,70 @@
+@use "../abstracts" as *;
+
+.t-header {
+    
+    @include breakpoint(md) {
+        position: fixed;
+        right: 3%;
+        top: 40%;
+        z-index: 20;
+    }
+}
+
+.t-header-mobile {
+    position: fixed;
+    width: 100%;
+    background-color: $secondary;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    color: white;
+    z-index: 100;
+}
+
+.t-nav {
+
+    @include breakpoint(md) {
+        width: 10px;
+        height: 40px;
+        background-color: white;
+        margin-bottom: 15px;
+        padding: 10px 5px;
+        box-shadow: -5px 8px 10px rgba(0, 0, 0, .5);
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        right: 0 !important;
+        margin-left: auto;
+        transition: all .4s;
+    }
+    
+
+    &__copy {
+        @include breakpoint(md){
+            color: white;
+            position: absolute;
+            font-weight: 900;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    &:hover {
+        @include breakpoint(md) {
+            width: 100px;
+            background-color: $primary;
+
+            p {
+                display: block;
+                animation: appear .5s forwards linear;
+            }
+        }
+    }
+
+    &.current {
+        @include breakpoint(md) {
+            background-color: $primary;
+        }
+    }
+}

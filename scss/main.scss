@@ -1,5 +1,6 @@
 @use 'abstracts/index' as *;
 @use 'base/index' as *;
+@use 'layout/index' as *;
 
 
 /*  -----------------
@@ -533,15 +534,6 @@
     width: 100%;
 }
 
-.t-header-mobile {
-    position: fixed;
-    width: 100%;
-    background-color: $secondary;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
-    color: white;
-    z-index: 100;
-}
-
 .t-icon-txt {
     background-color: $primary;
 }
@@ -596,54 +588,6 @@
 @media (min-width: 768px) {
     .t-brain img {
         animation: float 1.25s ease-in-out infinite alternate;
-    }
-
-    .t-header {
-        position: fixed;
-        right: 3%;
-        top: 40%;
-        z-index: 20;
-    }
-
-    .t-nav {
-        width: 10px;
-        height: 40px;
-        background-color: white;
-        margin-bottom: 15px;
-        padding: 10px 5px;
-        box-shadow: -5px 8px 10px rgba(0, 0, 0, .5);
-        cursor: pointer;
-        position: relative;
-        z-index: 10;
-        right: 0 !important;
-        margin-left: auto;
-        transition: all .4s;
-    }
-
-    .t-nav:hover {
-        width: 100px;
-        background-color: $primary;
-    }
-
-    .t-nav.current {
-        background-color: $primary;
-    }
-
-    .t-nav:hover>p {
-        display: block;
-        animation: appear .5s forwards linear;
-    }
-
-
-    .t-nav p {
-        color: white;
-        position: absolute;
-        font-weight: 900;
-        top: 50%;
-        left: 10%;
-        transform: translateY(-50%);
-        display: none;
-        opacity: 0;
     }
 }
 
