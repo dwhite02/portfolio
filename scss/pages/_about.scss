@@ -1,0 +1,162 @@
+@use "../abstracts" as *;
+
+/* ABOUT */
+
+#about {
+
+    @include breakpoint(xl) {
+        left: 100%;
+    }
+
+    .t-brain {
+        position: absolute;
+
+        &.one {
+            left: 3%;
+            bottom: 11%;
+            width: 20%;
+
+            @include breakpoint(xl) {
+                width: 25%;
+            }
+        }
+
+        &.two {
+            right: 5%;
+            width: 12%;
+            top: 0;
+
+            @include breakpoint(md) {
+                top: 6%;
+            }
+        }
+    }
+
+    .t-content {
+        @include breakpoint(xl,max) {
+            flex-direction: column;
+        }
+    }
+
+    .t-image {
+        margin-left: 0;
+
+        @include breakpoint(xl,max) {
+            width: 100%;
+        }
+
+        @include breakpoint(xl) {
+            margin-left: 4%;
+        }
+    }
+
+    .t-info {
+        position: relative;
+        margin-top: -35%;
+        color: white;
+
+        @include breakpoint(xl) {
+            margin-top: 5%;
+        }
+
+        @include breakpoint(xl,max) {
+            width: 100%;
+        }
+    }
+
+    .t-job {
+        @include breakpoint(xs, max) {
+            margin-bottom: 10%;
+        }
+        h3 {
+            color: $primary;
+        }
+    }
+
+    .t-side-content {
+        color: white;
+        margin-bottom: 10%;
+
+        @include breakpoint(xs, max) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include breakpoint(xl) {
+            margin-bottom: 1%;
+        }
+    }
+
+    .t-sub-title {
+        border-top: none;
+        margin-block: 5%;
+
+        @include breakpoint(xs) {
+            border-top: 10px solid #fff;
+            margin-block: 0;
+        }
+
+        h2 {
+            text-shadow: -2px 5px $secondary;
+            font-size: 7vw;
+
+            @include breakpoint(xs) {
+                font-size: 3vw;
+            }
+        }
+    }
+
+    .t-text {
+        @include breakpoint(xl) {
+            font-size: 15px;
+        }
+    }
+
+    .t-text-container {
+        position: relative;
+        background-color: transparent;
+        padding: 20px;
+        border: 10px solid $primary;
+        border-radius: 50px;
+        height: auto;
+        margin-top: 3%;
+        
+        @include breakpoint(xl) {
+            margin-top: -6%;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            
+            right: 0;
+            bottom: 0;
+            
+            z-index: -1;
+            border: 10px solid rgba(255, 255, 255, .11);
+            border-radius: 50px;
+
+            top: 15%;
+            left: 10%;
+
+            @include breakpoint(xs) {
+                top: 40%;
+                left: 10%;
+            }
+
+            @include breakpoint(xl) {
+                top: 20%;
+            }
+        }
+    }
+
+    .t-title {
+        margin-left: 0%;
+
+        @include breakpoint(xl) {
+            margin-left: -20%;
+        }
+    }
+}

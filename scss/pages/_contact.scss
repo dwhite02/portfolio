@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+
+/* CONTACT  */
+
+#contact {
+
+    @media (min-width:376px) and (max-width:768px) {
+        height: 100vh;
+    }
+
+    @include breakpoint(xl) {
+        left: 300%;
+    }
+
+    .t-button {
+        color: white;
+        position: relative;
+        border-bottom: 10px solid $primary;
+        cursor: pointer;
+
+        &:hover {
+            animation: impact .6s ease-in-out;
+
+            &::after {
+                animation: impact2 .6s ease-in-out;
+            }
+
+            img {
+                animation: jump .6s ease-in-out;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            border-bottom: 10px solid #fff;
+            content: "";
+            top: 63px;
+            left: 10px;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+        }
+    }
+
+    .t-title {
+        margin-top: -18%;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+

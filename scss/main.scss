@@ -1,481 +1,20 @@
 @use 'abstracts/index' as *;
 @use 'base/index' as *;
 @use 'layout/index' as *;
-
-
-/*  -----------------
-    ID STYLES
----------------------  */
-
-@media (min-width: 1024px) {
-    #about {
-        position: absolute;
-        top: 0;
-        left: 100%;
-    }
-
-    #work {
-        position: absolute;
-        top: 0;
-        left: 200%;
-    }
-
-    #contact {
-        position: absolute;
-        top: 0;
-        left: 300%;
-    }
-
-
-}
-
-/* HOME */
-#home {
-    height: 100vh;
-}
-
-#home .t-content {
-    width: 100%;
-    position: relative;
-}
-
-#home .t-title {
-    position: absolute;
-    bottom: -32%;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    text-shadow: -5px 8px 10px rgba(0, 0, 0, .8);
-}
-
-@media (max-width:1024px) {
-    #home .t-title {
-        font-size: 15vw;
-        bottom: -20%;
-    }
-}
-
-#home .t-brain {
-    position: absolute;
-}
-
-#home .t-brain.one {
-    left: 3%;
-    top: 8%;
-    width: 25%;
-}
-
-#home .t-brain.two {
-    right: 11%;
-    bottom: 2%;
-    width: 12%;
-    opacity: .8;
-}
-
-@media (max-width:768px) {
-    #home .t-brain.two {
-        display: none;
-    }
-}
-
-#home .t-brain.three {
-    right: -10%;
-    top: -22%;
-    width: 40%;
-    transform: rotate(195deg) !important;
-    opacity: .5;
-}
-
-@media (min-width:376px) and (max-width:1024px) {
-    #home .t-brain.three {
-        top: -6%;
-    }
-}
-
-
-#home .t-brain.four {
-    left: 8%;
-    bottom: 8%;
-    width: 5%;
-    transform: rotate(247deg) !important;
-    opacity: .15;
-}
-
-/* ABOUT */
-
-#about .t-brain {
-    position: absolute;
-}
-
-#about .t-brain.one {
-    left: 3%;
-    bottom: 11%;
-    width: 25%;
-}
-
-#about .t-brain.two {
-    right: 5%;
-    top: 6%;
-    width: 12%;
-}
-
-#about .t-image {
-    margin-left: 4%;
-}
-
-#about .t-info {
-    position: relative;
-    margin-top: 5%;
-    color: white;
-}
-
-#about .t-job h3 {
-    color: $primary;
-}
-
-#about .t-side-content {
-    color: white;
-    margin-bottom: 1%;
-}
-
-#about .t-sub-title {
-    border-top: 10px solid #fff;
-}
-
-#about .t-sub-title h2 {
-    text-shadow: -2px 5px $secondary;
-    font-size: 3vw;
-}
-
-#about .t-text-container {
-    position: relative;
-    background-color: transparent;
-    padding: 20px;
-    border: 10px solid $primary;
-    border-radius: 50px;
-    height: auto;
-}
-
-#about .t-text-container::after {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 40%;
-    right: 0;
-    bottom: 0;
-    left: 10%;
-    z-index: -1;
-    border: 10px solid rgba(255, 255, 255, .11);
-    border-radius: 50px;
-}
-
-#about .t-title {
-    margin-left: -20%;
-}
-
-@media (min-width: 1024px) {
-    #about .t-text {
-        font-size: 15px;
-    }
-
-    #about .t-text-container {
-        margin-top: -6%;
-    }
-
-    #about .t-text-container::after {
-        top: 20%;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    #about .t-brain.one {
-        left: 3%;
-        bottom: 11%;
-        width: 20%;
-    }
-
-    #about .t-content {
-        flex-direction: column;
-    }
-
-    #about .t-title {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    #about .t-title,
-    #about .t-image {
-        margin-left: 0;
-    }
-
-    #about .t-image {
-        width: 100%;
-    }
-
-    #about .t-info {
-        margin-top: -35%;
-        width: 100%;
-    }
-
-    #about .t-side-content {
-        margin-top: 10%;
-    }
-
-    #about .t-text-container {
-        margin-top: 3%;
-    }
-}
-
-@media (max-width: 768px) {
-    #about .t-brain.two {
-        top: 0;
-    }
-}
-
-@media (max-width: 375px) {
-    #about .t-job {
-        margin-bottom: 10%;
-    }
-
-    #about .t-side-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #about .t-sub-title {
-        border-top: none;
-        margin-bottom: 5%;
-        margin-top: 5%;
-    }
-
-    #about .t-sub-title h2 {
-        font-size: 7vw;
-    }
-
-    #about .t-text-container::after {
-        top: 15%;
-        left: 10%;
-    }
-}
-
-/* WORK */
-
-#work .t-brain {
-    position: absolute;
-}
-
-#work .t-brain.one {
-    left: 10%;
-    top: 1%;
-    width: 5%;
-}
-
-#work .t-brain.two {
-    right: 5%;
-    top: 9%;
-    width: 20%;
-}
-
-#work .t-card {
-    position: relative;
-    width: 20%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    box-shadow: 20px 30px $secondary;
-    padding: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border: 10px solid white;
-    ;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    transition: all .4s;
-    overflow: hidden;
-    margin-bottom: 8%;
-    min-height: 350px;
-
-}
-
-#work .t-card:hover {
-    cursor: pointer;
-    border: 10px solid $secondary;
-    transform: translateY(-50px);
-}
-
-
-#work .t-card:hover>.t-card-info {
-    top: 0;
-}
-
-#work .t-card-info {
-    position: absolute;
-    content: "";
-    top: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    height: 100%;
-    width: 100%;
-    background: black;
-    color: white;
-    transition: all .4s;
-    ;
-}
-
-#work .t-cards-container {
-    max-width: 1250px;
-}
-
-#work .t-card-info button {
-    background-color: $primary;
-    border-radius: 100px;
-    padding: 10px 25px;
-    margin-top: 15%;
-    transition: all .3s;
-}
-
-#work .t-card-info button:hover {
-    background-color: $secondary;
-}
-
-#work .t-card-info h2 {
-    font-size: 2.3vw;
-    margin-bottom: 5%;
-}
-
-#work .t-image {
-    margin-top: -8%;
-    margin-left: 24%;
-}
-
-#work .t-info {
-    margin-top: -32%;
-}
-
-@media (min-width: 1280px) {
-    #work .t-cards-container {
-        position: absolute;
-        bottom: -6%;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    #work .t-card {
-        width: 100%;
-        margin-left: 3%;
-        margin-right: 3%;
-        max-width: 30%;
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    #work .t-brain.one {
-        display: none;
-    }
-
-    #work .t-brain.two {
-        width: 10%;
-    }
-
-    #work .t-card {
-        width: 70%;
-        height: 50%;
-        max-width: 100%;
-    }
-
-
-    #work .t-cards-container {
-        margin-top: 8%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #work .t-card:hover {
-        cursor: pointer;
-        border: 10px solid $secondary;
-        transform: translateY(-30px);
-    }
-
-    #work .t-card-info h2 {
-        font-size: 4vw;
-    }
-
-    #work .t-image {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 375px) {
-
-    #work .t-card {
-        width: 90%;
-        margin-bottom: 25%;
-        box-shadow: 20px 30px $secondary;
-    }
-
-    #work .t-card-info h2 {
-        font-size: 6vw;
-    }
-}
-
-/* CONTACT  */
-
-@media (min-width:376px) and (max-width:768px) {
-    #contact {
-        height: 100vh;
-    }
-}
-
-#contact .t-button {
-    color: white;
-    position: relative;
-    border-bottom: 10px solid $primary;
-    cursor: pointer;
-}
-
-#contact .t-button::after {
-    position: absolute;
-    border-bottom: 10px solid #fff;
-    content: "";
-    top: 63px;
-    left: 10px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-
-}
-
-#contact .t-button:hover>img {
-    animation: jump .6s ease-in-out;
-}
-
-#contact .t-button:hover {
-    animation: impact .6s ease-in-out;
-}
-
-#contact .t-button:hover::after {
-    animation: impact2 .6s ease-in-out;
-}
-
-#contact .t-title {
-    margin-top: -18%;
-    position: relative;
-    z-index: 10;
-}
+@use 'pages/index' as *;;
 
 /*  -----------------
    CLASS STYLES
 ---------------------  */
+
+.t-view {
+    position: relative;
+    
+    @include breakpoint(xl) {
+        position: absolute;
+        top: 0;
+    }
+}
 
 .overlay {
     color: white;
@@ -483,56 +22,92 @@
     height: 0;
     width: 100%;
     position: fixed;
-    /* Stay in place */
     z-index: 1000;
-    /* Sit on top */
     left: 0;
     top: 0%;
     background-color: black;
     transition: 0.5s;
     /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     overflow: hidden;
+
+    &__close-btn {
+        position: absolute;
+        top: 12%;
+        right: 2%;
+        cursor: pointer;
+        color: white;
+
+        @include breakpoint(xs) {
+            top: 5%;
+            right: 5%;
+        }
+
+        &:hover {
+            svg {
+                opacity: 1;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transition: all .5s;
+        }
+
+        svg, img {
+            @include breakpoint(xs) {
+                width: 60%;
+            }
+        }
+    }
+
+    &__content {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+
+        h3 {
+            font-size: 6vw;
+
+            @include breakpoint(xs) {
+                font-size: 3vw;
+            }
+        }
+    }
+
+    .t-brain {
+        position: absolute;
+        left: -20%;
+        bottom: -12%;
+        width: 50%;
+
+        @include breakpoint(sm) {
+            left: -5%;
+            bottom: -15%;
+            width: 60%;
+        }
+        
+        @include breakpoint(md) {
+            left: -4%;
+            bottom: -5%;
+            width: 60%;
+        }
+
+        @include breakpoint(xl) {
+            left: -5%;
+            bottom: -15%;
+            width: 100%;
+        }
+
+        img {
+            @include breakpoint(md) {
+                animation: float 1.25s ease-in-out infinite alternate;
+            }
+        }
+    }
 }
 
-.overlay .t-close-btn {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    cursor: pointer;
-    color: white;
-}
-
-.overlay .t-close-btn svg {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: all .5s;
-}
-
-.overlay .t-close-btn:hover>svg {
-    opacity: 1;
-}
-
-
-.overlay-content {
-
-    margin: auto;
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-}
-
-.overlay-content h3 {
-    font-size: 3vw;
-}
-
-.overlay .t-brain {
-    position: absolute;
-    left: -5%;
-    bottom: -15%;
-    width: 100%;
-}
 
 .t-icon-txt {
     background-color: $primary;
@@ -543,15 +118,23 @@
 }
 
 .t-title {
-    font-size: 13vw;
+    font-size: 18vw;
     color: white;
     text-shadow: -5px 8px rgba(0, 0, 0, .8);
+
+    @include breakpoint(xl) {
+        font-size: 13vw;
+    }
 }
 
 .t-project-title {
     color: $primary;
-    font-size: 6vw;
+    font-size: 10vw;
     line-height: 1;
+
+    @include breakpoint(xs) {
+        font-size: 6vw;
+    }
 }
 
 .t-wrapper {
@@ -561,61 +144,4 @@
     z-index: 0;
     overflow: hidden;
     padding: 20px;
-}
-
-/* Media Queries */
-
-@media (max-width: 1024px) {
-    .t-title {
-        font-size: 18vw;
-    }
-
-    .overlay .t-brain {
-        left: -4%;
-        bottom: -5%;
-        width: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    .overlay .t-brain {
-        left: -5%;
-        bottom: -15%;
-        width: 60%;
-    }
-}
-
-@media (min-width: 768px) {
-    .t-brain img {
-        animation: float 1.25s ease-in-out infinite alternate;
-    }
-}
-
-@media (max-width: 375px) {
-
-    .overlay-content h3 {
-        font-size: 6vw;
-    }
-
-    .overlay .t-brain {
-        left: -20%;
-        bottom: -12%;
-        width: 50%;
-    }
-
-    .overlay .t-close-btn {
-        top: 12%;
-        right: 2%;
-    }
-
-    .overlay .t-close-btn svg,
-    .overlay .t-close-btn img {
-        width: 60%;
-    }
-
-    .t-project-title {
-        color: $primary;
-        font-size: 10vw;
-    }
-
 }

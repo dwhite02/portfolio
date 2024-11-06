@@ -100,7 +100,7 @@
 
             <!-- ABOUT -->
 
-            <section id="about" class="">
+            <section id="about" class="t-view">
                 <div class="t-wrapper flex flex-col">
                     <div class="t-content flex flex-1 lg:flex-row">
                         <div class="t-image lg:w-6/12 flex-auto p-2">
@@ -155,7 +155,7 @@
 
             <!-- WORK -->
 
-            <section id="work" class="">
+            <section id="work" class="t-view">
                 <div class="t-wrapper flex flex-col">
                     <div class="t-content">
                         <div class="t-image">
@@ -166,12 +166,12 @@
                             <div class="t-cards-container flex-1 w-full flex justify-center flex-wrap">
                                 <div v-for="project in projects" v-on:click="openModal(project.id)" class="t-card flex-auto ">
                                     <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
-                                    <div class="t-card-info text-center">
-                                        <h2 class=" font-black">{{project.title.toUpperCase()}}</h2>
+                                    <div class="t-card__info text-center">
+                                        <h2 class="t-card__headline font-black">{{project.title.toUpperCase()}}</h2>
                                         <p>
                                             {{project.about.split(" ").splice(0,15).join(" ")}} ...
                                         </p>
-                                        <button> View More </button>
+                                        <button class="t-card__view-all-btn"> View More </button>
                                     </div>
                                 </div>
                             </div>
@@ -188,9 +188,7 @@
                 </div>
             </section>
 
-            CONTACT
-
-            <section id="contact" class="">
+            <section id="contact" class="t-view">
                 <div class="t-wrapper flex items-center justify-center">
                     <div class="t-content w-full">
                         <div class="t-image t-brain">
@@ -213,7 +211,7 @@
 
             <div v-for="project in projects" v-bind:id="project.id" class="overlay flex items-center">
                 <!-- Overlay content -->
-                <div class="overlay-content flex flex-col w-10/12 md:w-1/2">
+                <div class="overlay__content flex flex-col w-10/12 md:w-1/2">
                     <div class="t-icons flex justify-center">
                         <a class="m-4 " v-bind:href="project.web" target="_blank">
                             <p class="t-icon-txt mb-4"> WEB </p>
@@ -242,7 +240,7 @@
                         <p> {{project.tools}} </p>
                     </div>
                 </div>
-                <div v-on:click="closeModal(project.id)" class="t-close-btn">
+                <div v-on:click="closeModal(project.id)" class="overlay__close-btn">
                     <img src="images/assets/close.svg" alt="close icon" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="55.068" height="54.948" viewBox="0 0 55.068 54.948">
                         <defs>

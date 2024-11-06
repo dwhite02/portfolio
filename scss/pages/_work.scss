@@ -1,0 +1,162 @@
+@use "../abstracts" as *;
+
+/* WORK */
+
+#work {
+
+    @include breakpoint(xl) {
+        left: 200%;
+    }
+    
+    .t-brain {
+        position: absolute;
+
+        &.one {
+            left: 10%;
+            top: 1%;
+            width: 5%;
+            display: none;
+
+            @include breakpoint(md) {
+                display: block;
+            }
+
+        }
+
+        &.two {
+            right: 5%;
+            top: 9%;
+            width: 10%;
+
+            @include breakpoint(md) {
+                width: 20%;
+            }
+            
+        }
+    }
+
+    .t-card {
+        position: relative;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        padding: 20px;
+        border: 10px solid white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        transition: all .4s;
+        overflow: hidden;
+        min-height: 350px;
+        width: 90%;
+        margin-bottom: 25%;
+        box-shadow: 20px 30px $secondary;
+
+        @include breakpoint(xs) {
+            width: 70%;
+            height: 50%;
+            max-width: 100%;
+            margin-bottom: 8%;
+        }
+
+        @include breakpoint(md) {
+            width: 100%;
+            margin-left: 3%;
+            margin-right: 3%;
+            max-width: 30%;
+        }
+
+        @include breakpoint(xl) {
+            width: 20%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        &:hover {
+            @include breakpoint(md, max) {
+                cursor: pointer;
+                border: 10px solid $secondary;
+                transform: translateY(-30px);
+            }
+        }
+
+        &__headline {
+            font-size: 6vw;
+            margin-bottom: 5%;
+
+            @include breakpoint(xs) {
+                font-size: 4vw;
+            }
+
+            @include breakpoint(md) {
+                font-size: 2.3vw;
+            }
+        }
+
+        &__info {
+            position: absolute;
+            content: "";
+            top: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+            background: black;
+            color: white;
+            transition: all .4s;
+        }
+
+        &__view-all-btn {
+            background-color: $primary;
+            border-radius: 100px;
+            padding: 10px 25px;
+            margin-top: 15%;
+            transition: all .3s;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 10px solid $secondary;
+            transform: translateY(-50px);
+
+            .t-card__info {
+                top: 0;
+            }
+        }
+    }
+
+    .t-cards-container {
+        max-width: 1250px;
+
+        @include breakpoint(md, max) {
+            margin-top: 8%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include breakpoint(1280px) {
+            position: absolute;
+            bottom: -6%;
+        }
+    }
+
+    .t-image {
+        margin-top: 0;
+        margin-left: 24%;
+
+        @include breakpoint(md) {
+            margin-top: -8%;
+        }
+    }
+
+    .t-info {
+        margin-top: -32%;
+    }
+}
