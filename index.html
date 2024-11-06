@@ -233,29 +233,29 @@
                 <!-- Overlay content -->
                 <div class="overlay__content flex flex-col w-10/12 md:w-1/2">
                     <div class="t-icons flex justify-center">
-                        <a class="m-4 " v-bind:href="project.web" target="_blank">
+                        <a v-if="project.web" class="m-4 " v-bind:href="project.web" target="_blank">
                             <p class="t-icon-txt mb-4"> WEB </p>
                             <img class="h-12" src="images/assets/www.svg" alt="browser icon">
                         </a>
-                        <a class="m-4" v-bind:href="project.github" target="_blank">
+                        <a v-if="project.github" class="m-4" v-bind:href="project.github" target="_blank">
                             <p class="t-icon-txt mb-4"> GIT </p>
                             <img class="h-12" src="images/assets/git.svg" alt="github icon">
                         </a>
                     </div>
-                    <div class="t-project-title mb-5">
+                    <div v-if="project.title" class="t-project-title mb-5">
                         <h2 class="font-black"> {{project.title.toUpperCase()}}</h2>
                     </div>
-                    <div class="t-for mb-5">
+                    <div v-if="project.for" class="t-for mb-5">
                         <h3 class="font-bold">For :</h3>
                         <p> {{project.for}}</p>
                     </div>
-                    <div class="t-about mb-5">
+                    <div v-if="project.about" class="t-about mb-5">
                         <h3 class="font-bold">About :</h3>
                         <p>
                             {{project.about}}
                         </p>
                     </div>
-                    <div class="t-tools mb-5">
+                    <div v-if="project.tools" class="t-tools mb-5">
                         <h3 class="font-bold">Tools :</h3>
                         <p> {{project.tools}} </p>
                     </div>
