@@ -82,7 +82,7 @@ body {
   scroll-behavior: smooth;
   background: black;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   html,
   body {
     overflow: hidden;
@@ -107,7 +107,7 @@ section {
   min-height: 50vh;
   height: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   section {
     height: 100vh;
     width: 100vw;
