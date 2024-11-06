@@ -91,6 +91,34 @@ new Vue ({
     }
 })
 
+/* -----------------
+    Slider
+-------------------*/
+
+if ($('.swiper').length) {
+    const swiper = new Swiper(".swiper", {
+        // spaceBetween: 30,
+        enabled: false,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                enabled: true,
+            },
+            1280: {
+                slidesPerView: 4,
+            },
+        },
+    });
+}
 
 /* -----------------
     Hash Anchor

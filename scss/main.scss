@@ -7,9 +7,17 @@
    CLASS STYLES
 ---------------------  */
 
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide{
+    height: auto !important;
+}
+
 .t-view {
     position: relative;
-    
+
     @include breakpoint(xl) {
         position: absolute;
         top: 0;
@@ -56,8 +64,9 @@
         }
 
         svg, img {
+            width: 60%;
             @include breakpoint(xs) {
-                width: 60%;
+                width: auto;
             }
         }
     }

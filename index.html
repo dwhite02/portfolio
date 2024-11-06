@@ -11,6 +11,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/tay.png">
         <link rel="icon" type="image/png" sizes="96x96" href="images/tay.png">
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css" rel="stylesheet">
 
         <!-- Twitter Card data -->
@@ -127,9 +128,9 @@
                             <h2> RESUME </h2>
                         </div>
                         <div class="t-job">
-                            <h3 class="t-org"> THE RISE FOUNDATION </h3>
-                            <p class="t-role "> Digital Media Specialist </p>
-                            <p class="t-date"> JUL20 ~ </p>
+                            <h3 class="t-org"> RADANCY </h3>
+                            <p class="t-role "> UI Frontend Developer </p>
+                            <p class="t-date"> MAR21 ~ </p>
                         </div>
                         <div class="t-job">
                             <h3 class="t-org"> NEON ONE </h3>
@@ -163,17 +164,34 @@
                         </div>
                         <div class="t-info flex flex-col items-center">
                             <h1 class="t-title flex-1"> WORK </h1>
-                            <div class="t-cards-container flex-1 w-full flex justify-center flex-wrap">
-                                <div v-for="project in projects" v-on:click="openModal(project.id)" class="t-card flex-auto ">
-                                    <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
-                                    <div class="t-card__info text-center">
-                                        <h2 class="t-card__headline font-black">{{project.title.toUpperCase()}}</h2>
-                                        <p>
-                                            {{project.about.split(" ").splice(0,15).join(" ")}} ...
-                                        </p>
-                                        <button class="t-card__view-all-btn"> View More </button>
+                            <div class="t-cards-container ">
+                                <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div v-for="project in projects" class="swiper-slide">
+                                            <div v-on:click="openModal(project.id)" class="t-card flex-auto ">
+                                                <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
+                                                <div class="t-card__info text-center">
+                                                    <h2 class="t-card__headline font-black">{{project.title.toUpperCase()}}</h2>
+                                                    <p>
+                                                        {{project.about.split(" ").splice(0,15).join(" ")}} ...
+                                                    </p>
+                                                    <button class="t-card__view-all-btn"> View More </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                        
                                 </div>
+                                
                             </div>
                             <div class="t-bg">
                                 <div class="t-brain one">
@@ -187,6 +205,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- CONTACT -->
 
             <section id="contact" class="t-view">
                 <div class="t-wrapper flex items-center justify-center">
@@ -260,6 +280,7 @@
             </div>
         </div> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
     </body>

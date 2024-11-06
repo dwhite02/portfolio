@@ -27,7 +27,7 @@
             opacity: .8;
             display: none;
 
-            @include breakpoint(md) {
+            @include breakpoint(xl) {
                 display: block;
             }
         }
