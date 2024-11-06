@@ -15,9 +15,11 @@
             left: 3%;
             bottom: 11%;
             width: 20%;
+            display: none;
 
             @include breakpoint(xl) {
                 width: 25%;
+                display: block;
             }
         }
 
@@ -35,6 +37,15 @@
     .t-content {
         @include breakpoint(xl,max) {
             flex-direction: column;
+        }
+
+        @include breakpoint(xl) {
+            width: calc(100% - 40px * 2);
+            margin-inline: auto;
+        }
+
+        @include breakpoint(1600px) {
+            width: calc(100% - 80px * 2);
         }
     }
 
@@ -65,9 +76,12 @@
     }
 
     .t-job {
-        @include breakpoint(xs, max) {
-            margin-bottom: 10%;
+        margin-bottom: 10%;
+
+        @include breakpoint(md) {
+            margin-bottom: 0;
         }
+
         h3 {
             color: $primary;
         }
@@ -76,13 +90,17 @@
     .t-side-content {
         color: white;
         margin-bottom: 10%;
+        flex-direction: column;
+        text-align: center;
 
-        @include breakpoint(xs, max) {
-            flex-direction: column;
-            text-align: center;
+        @include breakpoint(md) {
+            flex-direction: row;
+            margin-top: 5%;
+            text-align: left;
         }
 
         @include breakpoint(xl) {
+            margin-top: 0;
             margin-bottom: 1%;
         }
     }
@@ -91,7 +109,7 @@
         border-top: none;
         margin-block: 5%;
 
-        @include breakpoint(xs) {
+        @include breakpoint(md) {
             border-top: 10px solid #fff;
             margin-block: 0;
         }
@@ -100,7 +118,7 @@
             text-shadow: -2px 5px $secondary;
             font-size: 7vw;
 
-            @include breakpoint(xs) {
+            @include breakpoint(md) {
                 font-size: 3vw;
             }
         }
@@ -126,28 +144,21 @@
         }
 
         &::after {
+            display: none;
             position: absolute;
             content: "";
             height: 100%;
             width: 100%;
-            
             right: 0;
             bottom: 0;
-            
             z-index: -1;
             border: 10px solid rgba(255, 255, 255, .11);
             border-radius: 50px;
-
-            top: 15%;
+            top: 20%;
             left: 10%;
 
-            @include breakpoint(xs) {
-                top: 40%;
-                left: 10%;
-            }
-
             @include breakpoint(xl) {
-                top: 20%;
+                display: block;
             }
         }
     }

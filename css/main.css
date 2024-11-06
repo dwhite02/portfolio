@@ -255,10 +255,12 @@ section {
   left: 3%;
   bottom: 11%;
   width: 20%;
+  display: none;
 }
 @media (min-width: 1024px) {
   #about .t-brain.one {
     width: 25%;
+    display: block;
   }
 }
 #about .t-brain.two {
@@ -274,6 +276,17 @@ section {
 @media (max-width: 1024px) {
   #about .t-content {
     flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  #about .t-content {
+    width: calc(100% - 80px);
+    margin-inline: auto;
+  }
+}
+@media (min-width: 1600px) {
+  #about .t-content {
+    width: calc(100% - 160px);
   }
 }
 #about .t-image {
@@ -304,9 +317,12 @@ section {
     width: 100%;
   }
 }
-@media (max-width: 375px) {
+#about .t-job {
+  margin-bottom: 10%;
+}
+@media (min-width: 768px) {
   #about .t-job {
-    margin-bottom: 10%;
+    margin-bottom: 0;
   }
 }
 #about .t-job h3 {
@@ -315,15 +331,19 @@ section {
 #about .t-side-content {
   color: white;
   margin-bottom: 10%;
+  flex-direction: column;
+  text-align: center;
 }
-@media (max-width: 375px) {
+@media (min-width: 768px) {
   #about .t-side-content {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    margin-top: 5%;
+    text-align: left;
   }
 }
 @media (min-width: 1024px) {
   #about .t-side-content {
+    margin-top: 0;
     margin-bottom: 1%;
   }
 }
@@ -331,7 +351,7 @@ section {
   border-top: none;
   margin-block: 5%;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   #about .t-sub-title {
     border-top: 10px solid #fff;
     margin-block: 0;
@@ -341,7 +361,7 @@ section {
   text-shadow: -2px 5px #FF3366;
   font-size: 7vw;
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   #about .t-sub-title h2 {
     font-size: 3vw;
   }
@@ -366,6 +386,7 @@ section {
   }
 }
 #about .t-text-container::after {
+  display: none;
   position: absolute;
   content: "";
   height: 100%;
@@ -375,18 +396,12 @@ section {
   z-index: -1;
   border: 10px solid rgba(255, 255, 255, 0.11);
   border-radius: 50px;
-  top: 15%;
+  top: 20%;
   left: 10%;
-}
-@media (min-width: 375px) {
-  #about .t-text-container::after {
-    top: 40%;
-    left: 10%;
-  }
 }
 @media (min-width: 1024px) {
   #about .t-text-container::after {
-    top: 20%;
+    display: block;
   }
 }
 #about .t-title {
