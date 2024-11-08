@@ -173,6 +173,7 @@
                                         <div v-for="project in projects" class="swiper-slide">
                                             <div v-on:click="openModal(project.id)" class="t-card flex-auto ">
                                                 <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
+                                                <span class="t-card__fake-title">{{project.title.toUpperCase()}}</span>
                                                 <div class="t-card__info text-center">
                                                     <h2 class="t-card__headline font-black">{{project.title.toUpperCase()}}</h2>
                                                     <p>
@@ -187,8 +188,8 @@
                                     <div class="swiper-pagination"></div>
                                 
                                     <!-- If we need navigation buttons -->
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
+                                    <!-- <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div> -->
                         
                                 </div>
                                 

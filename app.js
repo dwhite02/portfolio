@@ -13,8 +13,8 @@ new Vue ({
                 tools: "Backend: C#, ASP.NET Core | Frontend: React, Bootstrap | API: Custom RESTful API for scale logic",
                 web: "https://find-a-scale.onrender.com/",
                 github: "https://github.com/dwhite02/find-a-scale",
-                // img: "images/assets/weather.svg",
-                // alt: "Sun with weather icon"
+                img: "images/assets/search-music-v2.svg",
+                alt: "Music Scale Search"
             },
             {
                 title: "Song Diary",
@@ -23,8 +23,8 @@ new Vue ({
                 tools: "Frontend: React, Material-UI | Backend: ASP.NET Core, Entity Framework Core | Database: PostgreSQL | API: Spotify API",
                 // web: "https://weathy-finder.netlify.app/",
                 github: "https://github.com/dwhite02/song-diary",
-                // img: "images/assets/weather.svg",
-                // alt: "Sun with weather icon"
+                img: "images/assets/book-solid.svg",
+                alt: "Solid Book"
             },
             
             {
@@ -127,10 +127,10 @@ if ($('.swiper').length) {
             el: ".swiper-pagination",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
         breakpoints: {
             1024: {
                 slidesPerView: 3,

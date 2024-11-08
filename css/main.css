@@ -493,6 +493,20 @@ section {
 #work .t-card:hover .t-card__info {
   top: 0;
 }
+#work .t-card__fake-title {
+  font-weight: 900;
+  max-width: 100%;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 40px;
+  text-align: center;
+  color: #FF3366;
+}
 #work .t-card__headline {
   font-size: clamp(1.5rem, 6vw, 2rem);
   margin-bottom: 5%;

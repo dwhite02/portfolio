@@ -84,6 +84,21 @@
             }
         }
 
+        &__fake-title {
+            font-weight: 900;
+            max-width: 100%;
+            font-size: .75rem;
+            letter-spacing: 2px;
+            font-family:  "Roboto", Helvetica, Arial, sans-serif;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 40px;
+            text-align: center;
+            color: $secondary;
+        }
+
         &__headline {
             font-size: clamp(1.5rem, 6vw, 2rem); // Adjust the min, preferred, and max font sizes
             margin-bottom: 5%;
