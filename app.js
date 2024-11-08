@@ -58,9 +58,9 @@ new Vue ({
                 alt: "Media Player icon"
             },
             {
-                title: "Carrml Drop",
+                title: "CD3",
                 for: "Personal Project",
-                about: "A website conceptualization for rising R&B artist, Carrml Drop, depicting his various music and to help establish an online presence amongst his fans.",
+                about: "A comprehensive website concept for emerging R&B artist Carrml Drop, showcasing his music portfolio and fostering a strong online presence to connect with his growing fanbase",
                 tools: "HTML/CSS,  Tailwind CSS, JavaScript, VueJS",
                 web: "https://carrmldrop.netlify.app/",
                 github: "https://github.com/dwhite02/carrml-drop",
@@ -118,31 +118,43 @@ new Vue ({
     Slider
 -------------------*/
 
-if ($('.swiper').length) {
-    const swiper = new Swiper(".swiper", {
-        // spaceBetween: 30,
-        enabled: false,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        // navigation: {
-        //     nextEl: ".swiper-button-next",
-        //     prevEl: ".swiper-button-prev",
-        // },
-        breakpoints: {
-            1024: {
-                slidesPerView: 3,
-                enabled: true,
+let swiperInstance = null;
+
+function initSwiper() {
+    if (window.innerWidth > 1024 && !swiperInstance) {
+        swiperInstance = new Swiper(".swiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            1280: {
-                slidesPerView: 4,
-                enabled: true,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                1280: {
+                    slidesPerView: 4,
+                },
             },
-        },
-    });
+        });
+    }
 }
+
+function destroySwiper() {
+    if (window.innerWidth <= 1024 && swiperInstance) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+    }
+}
+
+$(document).ready(function () {
+    initSwiper(); // Initialize swiper on page load
+
+    $(window).resize(function () {
+        initSwiper(); // Initialize swiper when resizing to larger screens
+        destroySwiper(); // Destroy swiper when resizing to smaller screens
+    });
+});
 
 /* -----------------
     Hash Anchor
