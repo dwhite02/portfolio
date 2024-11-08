@@ -138,6 +138,7 @@ if ($('.swiper').length) {
             },
             1280: {
                 slidesPerView: 4,
+                enabled: true,
             },
         },
     });
