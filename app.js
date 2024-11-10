@@ -123,7 +123,7 @@ let swiperInstance = null;
 function initSwiper() {
     if (window.innerWidth > 1024 && !swiperInstance) {
         swiperInstance = new Swiper(".swiper", {
-            loop: true,
+            // loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -134,6 +134,7 @@ function initSwiper() {
                 },
                 1280: {
                     slidesPerView: 4,
+                    // slidesPerGroup: 1,
                 },
             },
         });
