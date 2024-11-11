@@ -1,9 +1,4 @@
 /*  -----------------
-    BASE STYLES
----------------------  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap");
-/*  -----------------
     Breakpoints
 ---------------------  */
 /*  -----------------
@@ -12,6 +7,8 @@
 /*  -----------------
     Typography
 ---------------------  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap");
 /*  -----------------
    Animations
 ---------------------  */
@@ -76,6 +73,9 @@
     top: 63px;
   }
 }
+/*  -----------------
+    BASE STYLES
+---------------------  */
 html,
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -185,7 +185,6 @@ section {
 }
 #home .t-content {
   width: 100%;
-  position: relative;
 }
 #home .t-brain {
   position: absolute;
@@ -228,20 +227,32 @@ section {
 }
 #home .t-title {
   position: absolute;
-  bottom: -20%;
   right: 0;
   left: 0;
   z-index: 10;
-  text-shadow: -5px 8px 10px rgba(0, 0, 0, 0.8);
+  bottom: 12%;
 }
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   #home .t-title {
-    bottom: -32%;
+    text-shadow: -12px -10px 1px rgba(0, 0, 0, 0.9);
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   #home .t-title {
-    font-size: 15vw;
+    font-size: 5rem;
+    letter-spacing: -4px;
+  }
+}
+#home .t-title__txt {
+  position: relative;
+}
+@media (min-width: 768px) {
+  #home .t-title__txt {
+    background-color: black;
+    border: #fff 1px solid;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.9137254902);
+    padding-inline: 60px;
+    border-radius: 50px;
   }
 }
 

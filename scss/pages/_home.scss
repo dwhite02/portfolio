@@ -8,7 +8,7 @@
 
     .t-content {
         width: 100%;
-        position: relative;
+        // position: relative;
     }
 
     .t-brain {
@@ -55,18 +55,35 @@
 
     .t-title {
         position: absolute;
-        bottom: -20%;
         right: 0;
         left: 0;
         z-index: 10;
-        text-shadow: -5px 8px 10px rgba(0, 0, 0, .8);
+        bottom: 12%;
+        // text-shadow: -15px -12.5px 2.5px rgba(0, 0, 0, 1);
+        // font-size: 15vw;
 
-        @include breakpoint(xl) {
-            bottom: -32%;
+        @include breakpoint(md, max) {
+            text-shadow: -12px -10px 1px rgba(0, 0, 0, .9);
         }
 
-        @include breakpoint(xl, max) {
-            font-size: 15vw;
+        @include breakpoint(md) {
+            // text-shadow: 5px 10px 1px $primary;
+            font-size: 5rem;
+            letter-spacing: -4px;
         }
+
+        &__txt {
+            position: relative;
+
+            @include breakpoint(md) {
+                background-color: black;
+                // background-color: $secondary;
+                border: #fff 1px solid;
+                box-shadow: 0 -10px 10px #000000e9;
+                padding-inline: 60px;
+                border-radius: 50px;
+            }
+        }
+
     }
 }

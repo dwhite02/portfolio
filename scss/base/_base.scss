@@ -3,12 +3,10 @@
 /*  -----------------
     BASE STYLES
 ---------------------  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Passion+One:wght@700;900&display=swap');
 
 html,
 body {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: $base-font;
     font-weight: 300;
     font-size: 1em;
     position: relative;
@@ -25,12 +23,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: $base-font;
     font-weight: 900 !important;
 }
 
 h1 {
-    font-family: 'Passion One', 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: $secondary-font;
     font-weight: 700 !important;
 }
 
