@@ -157,16 +157,19 @@
         margin-left: 24%;
 
         @include breakpoint(xl) {
+            position: absolute;
+            z-index: -1;
             margin-top: -8%;
         }
     }
 
     .t-info {
-        margin-top: -32%;
+        // margin-top: -32%;
+        // margin-top: 5%;
 
-        @include breakpoint(1800px) {
-            margin-top: -25%;
-        }
+        // @include breakpoint(1800px) {
+        //     margin-top: 5%;
+        // }
     }
 
     .swiper {
