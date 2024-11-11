@@ -164,8 +164,11 @@
     }
 
     .t-info {
-        // margin-top: -32%;
-        // margin-top: 5%;
+        margin-top: -32%;
+        
+        @include breakpoint(xl) {
+            margin-top: 3%;
+        }
 
         // @include breakpoint(1800px) {
         //     margin-top: 5%;

@@ -578,6 +578,14 @@ section {
     margin-top: -8%;
   }
 }
+#work .t-info {
+  margin-top: -32%;
+}
+@media (min-width: 1024px) {
+  #work .t-info {
+    margin-top: 3%;
+  }
+}
 #work .swiper {
   --swiper-navigation-sides-offset: 0;
   --swiper-navigation-size: 34px;
