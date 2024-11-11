@@ -138,6 +138,10 @@
     @include breakpoint(xl) {
         font-size: 13vw;
     }
+
+    @include breakpoint(1800px) {
+        font-size: 7rem;
+    }
 }
 
 .t-project-title {

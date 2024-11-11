@@ -800,6 +800,11 @@ section {
     font-size: 13vw;
   }
 }
+@media (min-width: 1800px) {
+  .t-title {
+    font-size: 7rem;
+  }
+}
 
 .t-project-title {
   color: #3399FF;
