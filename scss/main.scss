@@ -110,14 +110,17 @@
             width: 100%;
         }
 
-        img {
-            @include breakpoint(md) {
-                animation: float 1.25s ease-in-out infinite alternate;
-            }
-        }
+        
     }
 }
 
+.t-brain {
+    img {
+        @include breakpoint(md) {
+            animation: float 1.25s ease-in-out infinite alternate;
+        }
+    }
+}
 
 .t-icon-txt {
     background-color: $primary;

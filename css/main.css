@@ -777,8 +777,9 @@ section {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
-  .overlay .t-brain img {
+  .t-brain img {
     animation: float 1.25s ease-in-out infinite alternate;
   }
 }
