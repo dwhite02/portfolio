@@ -40,7 +40,7 @@
         }
 
         @include breakpoint(xl) {
-            width: calc(100% - 40px * 2);
+            width: calc(100% - 20px * 2);
             margin-inline: auto;
         }
 
@@ -100,7 +100,7 @@
         }
 
         @include breakpoint(xl) {
-            margin-top: 0;
+            margin-top: 2%;
             margin-bottom: 1%;
         }
     }
