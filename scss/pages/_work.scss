@@ -146,10 +146,10 @@
             width: calc(100% - 40px * 2);
         }
 
-        @include breakpoint(1280px) {
-            position: absolute;
-            bottom: 0;
-        }
+        // @include breakpoint(1280px) {
+        //     position: absolute;
+        //     bottom: 0;
+        // }
     }
 
     .t-image {

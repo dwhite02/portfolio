@@ -561,12 +561,6 @@ section {
     width: calc(100% - 80px);
   }
 }
-@media (min-width: 1280px) {
-  #work .t-cards-container {
-    position: absolute;
-    bottom: 0;
-  }
-}
 #work .t-image {
   margin-top: 0;
   margin-left: 24%;
