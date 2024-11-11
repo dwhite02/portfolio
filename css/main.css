@@ -10,6 +10,9 @@
     Colors
 ---------------------  */
 /*  -----------------
+    Typography
+---------------------  */
+/*  -----------------
    Animations
 ---------------------  */
 @keyframes appear {
@@ -495,7 +498,7 @@ section {
   top: 0;
 }
 #work .t-card__fake-title {
-  font-weight: 600;
+  font-weight: 900;
   max-width: 100%;
   font-size: 0.75rem;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -505,7 +508,7 @@ section {
   margin: auto;
   bottom: 40px;
   text-align: center;
-  color: #FF3366;
+  color: #000;
 }
 #work .t-card__headline {
   font-size: clamp(1.5rem, 6vw, 2rem);
