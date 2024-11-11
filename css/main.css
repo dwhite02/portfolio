@@ -347,11 +347,11 @@ section {
   margin-bottom: 10%;
   flex-direction: column;
   text-align: center;
+  margin-top: 5%;
 }
 @media (min-width: 768px) {
   #about .t-side-content {
     flex-direction: row;
-    margin-top: 5%;
     text-align: left;
   }
 }

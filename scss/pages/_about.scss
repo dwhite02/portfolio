@@ -92,10 +92,10 @@
         margin-bottom: 10%;
         flex-direction: column;
         text-align: center;
+        margin-top: 5%;
 
         @include breakpoint(md) {
             flex-direction: row;
-            margin-top: 5%;
             text-align: left;
         }
 
