@@ -583,7 +583,11 @@ section {
 }
 @media (min-width: 1024px) {
   #work .t-info {
-    margin-top: 3%;
+    position: absolute;
+    margin-top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 #work .swiper {
