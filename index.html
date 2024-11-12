@@ -33,39 +33,39 @@
         <div id="t-vue">
             <header class="t-header-mobile md:hidden p-4 flex justify-between items-center">
                 <div class="t-logo">
-                    <a v-on:click="scroll('#home')" href="#home">
+                    <a @click.prevent="scroll('#home')" href="#home">
                         <img class="w-8" src="images/assets/tay.jpg" alt="Logo Graphic"> 
                     </a>
                 </div>
                 <nav class="t-nav-items flex">
                     <div class="t-nav px-2">
-                        <a v-on:click="scroll('#about')" class="font-bold" href="#about">ABOUT</a>
+                        <a @click.prevent="scroll('#about')" class="font-bold" href="#about">ABOUT</a>
                     </div>
                     <div class="t-nav px-2">
-                        <a v-on:click="scroll('#work')" class="font-bold" href="#work">WORK</a>
+                        <a @click.prevent="scroll('#work')" class="font-bold" href="#work">WORK</a>
                     </div>
                     <div class="t-nav px-2">
-                        <a v-on:click="scroll('#contact')" class="font-bold" href="#contact">CONTACT</a>
+                        <a @click.prevent="scroll('#contact')" class="font-bold" href="#contact">CONTACT</a>
                     </div>
                 </nav>
             </header>
             <header class="t-header hidden md:block">
-                <a v-on:click="scroll('#home')" href="#home">
+                <a @click.prevent="scroll('#home')" href="#home">
                     <div class="t-nav">
                         <p class="t-nav__copy"> HOME </p>
                     </div>
                 </a>
-                <a v-on:click="scroll('#about')" href="#about">
+                <a @click.prevent="scroll('#about')" href="#about">
                     <div class="t-nav">
                         <p class="t-nav__copy"> ABOUT </p>
                     </div>
                 </a>
-                <a v-on:click="scroll('#work')" href="#work">
+                <a @click.prevent="scroll('#work')" href="#work">
                     <div class="t-nav">
                         <p class="t-nav__copy"> WORK </p>
                     </div>
                 </a>
-                <a v-on:click="scroll('#contact')" href="#contact">
+                <a @click.prevent="scroll('#contact')" href="#contact">
                     <div class="t-nav">
                         <p class="t-nav__copy"> CONTACT </p>
                     </div>
@@ -171,7 +171,7 @@
                                     <div class="swiper-wrapper">
                                         <!-- Slides -->
                                         <div v-for="project in projects" class="swiper-slide">
-                                            <div v-on:click="openModal(project.id)" class="t-card flex-auto ">
+                                            <div @click="openModal(project.id)" class="t-card flex-auto ">
                                                 <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
                                                 <span class="t-card__fake-title">{{project.title.toUpperCase()}}</span>
                                                 <div class="t-card__info text-center">
@@ -261,7 +261,7 @@
                         <p> {{project.tools}} </p>
                     </div>
                 </div>
-                <div v-on:click="closeModal(project.id)" class="overlay__close-btn">
+                <div @click="closeModal(project.id)" class="overlay__close-btn">
                     <img src="images/assets/close.svg" alt="close icon" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="55.068" height="54.948" viewBox="0 0 55.068 54.948">
                         <defs>
