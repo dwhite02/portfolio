@@ -170,7 +170,7 @@
                                     <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
                                         <!-- Slides -->
-                                        <div v-for="project in projects" class="swiper-slide">
+                                        <div v-for="project in projects" :key="project.id" class="swiper-slide">
                                             <div @click="openModal(project.id)" class="t-card flex-auto ">
                                                 <img class="h-40" v-bind:src="project.img" v-bind:alt="project.alt">
                                                 <span class="t-card__fake-title">{{project.title.toUpperCase()}}</span>
@@ -230,7 +230,7 @@
 
             <!-- MODAL WORK PROJECTS -->
 
-            <div v-for="project in projects" v-bind:id="project.id" class="overlay flex items-center">
+            <div v-for="project in projects" :key="project.id" v-bind:id="project.id" class="overlay flex items-center">
                 <!-- Overlay content -->
                 <div class="overlay__content flex flex-col w-10/12 md:w-1/2">
                     <div class="t-icons flex justify-center">
