@@ -16,16 +16,16 @@ new Vue ({
                 img: "images/assets/search-music-v2.svg",
                 alt: "Music Scale Search"
             },
-            {
-                title: "Song Diary",
-                for: "Personal Project",
-                about: "Song Diary is a full-stack web application that allows users to keep a personal diary of songs they love. Users can add entries that include song details, descriptions, moods, and audio previews. The application utilizes a C# backend with ASP.NET Core and a React frontend, providing a seamless experience for users to manage their song entries.",
-                tools: "Frontend: React, Material-UI | Backend: ASP.NET Core, Entity Framework Core | Database: PostgreSQL | API: Spotify API",
-                // web: "https://weathy-finder.netlify.app/",
-                github: "https://github.com/dwhite02/song-diary",
-                img: "images/assets/book-solid.svg",
-                alt: "Solid Book"
-            },
+            // {
+            //     title: "Song Diary",
+            //     for: "Personal Project",
+            //     about: "Song Diary is a full-stack web application that allows users to keep a personal diary of songs they love. Users can add entries that include song details, descriptions, moods, and audio previews. The application utilizes a C# backend with ASP.NET Core and a React frontend, providing a seamless experience for users to manage their song entries.",
+            //     tools: "Frontend: React, Material-UI | Backend: ASP.NET Core, Entity Framework Core | Database: PostgreSQL | API: Spotify API",
+            //     // web: "https://weathy-finder.netlify.app/",
+            //     github: "https://github.com/dwhite02/song-diary",
+            //     img: "images/assets/book-solid.svg",
+            //     alt: "Solid Book"
+            // },
             
             {
                 title: "Weathy",
